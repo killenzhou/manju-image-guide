@@ -1,0 +1,4 @@
+interface:
+  display_name: "创意参考搜索"
+  short_description: "按创意需求跨来源找参考、按相关程度排序、每批浏览二十条并归档选中素材"
+  default_prompt: "用 $creative-reference-search 搜一批岩洞逆光、薄雾和浮尘参考。"

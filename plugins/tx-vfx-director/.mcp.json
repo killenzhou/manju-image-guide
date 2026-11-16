@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tx_vfx_director": {
+      "command": "node",
+      "args": [
+        "./dist/server/index.mjs"
+      ],
+      "cwd": "."
+    }
+  }
+}

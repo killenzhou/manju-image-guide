@@ -1,0 +1,6 @@
+interface:
+  display_name: "镜头特效设计 · 智能模式"
+  short_description: "按镜头意图选择创意、落地、混合或风格匹配，支持静帧与视频关键帧"
+  default_prompt: "使用 $vfx-shot-design，结合当前镜头和项目参考设计特效，保留未授权变更的机位、人物与场景。"
+policy:
+  allow_implicit_invocation: true

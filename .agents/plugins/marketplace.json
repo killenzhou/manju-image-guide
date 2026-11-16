@@ -1,0 +1,20 @@
+{
+  "name": "tx-vfx-local",
+  "interface": {
+    "displayName": "踏星 · 本地工作台"
+  },
+  "plugins": [
+    {
+      "name": "tx-vfx-director",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tx-vfx-director"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

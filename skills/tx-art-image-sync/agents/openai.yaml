@@ -1,0 +1,4 @@
+interface:
+  display_name: "踏星设计图增量更新"
+  short_description: "核对中影年年服务器设计图，补齐缺失图片并直接覆盖本地旧图"
+  default_prompt: "使用 $tx-art-image-sync 更新TX美术设计图片，补齐缺失并直接覆盖服务器较新的旧图，不保留旧图副本。"

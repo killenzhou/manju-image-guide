@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+node_modules/
+.tmp/
+.vite/
+work/
+output/
+*.log
+.DS_Store
+Thumbs.db

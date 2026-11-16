@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "skill_version": "1.0.0",
+  "project_name": "踏星",
+  "codex_project_label": "TX",
+  "workspace": "<PROJECT_ROOT>/AI",
+  "observed_workspace_alias": "Y:\\TX\\AI",
+  "alias_note": "示例工作目录；跨机器部署时请按实际项目根目录映射。",
+  "main_skill": "skills/vfx-shot-design/SKILL.md",
+  "activation": {
+    "implicit": true,
+    "scope": "仅特效设计/改效/统一/落地/特效动态关键帧",
+    "ordinary_creative_tasks": "bypass",
+    "explicit_opt_out": true
+  },
+  "routing": {
+    "explicit_mode_wins": true,
+    "default_for_vfx_only": "Hybrid",
+    "beauty_alone_means_concept": false,
+    "mixed_beauty_and_feasibility": "Hybrid",
+    "hard_production": "Production",
+    "approved_reference_matching": "Style Match",
+    "missing_approved_reference": "待确认，不声称批准匹配"
+  },
+  "image_edit_locks": [
+    "camera",
+    "perspective",
+    "aspect_ratio",
+    "character_identity",
+    "pose",
+    "costume",
+    "scene_structure",
+    "non_target_regions"
+  ],
+  "unlock_policy": "仅用户明确要求的变更范围解锁",
+  "background": {
+    "pipeline": [
+      "UE 特效",
+      "Houdini 流体辅助",
+      "合成"
+    ],
+    "source": "制作管线背景描述",
+    "preferred_aesthetic": [
+      "电影 CG",
+      "清晰结构与材质",
+      "局部克制发光",
+      "动态可推导"
+    ],
+    "aesthetic_status": "初始设计偏好；当前镜头与用户明确要求优先",
+    "engine_version": null,
+    "fps_budget": null,
+    "particle_budget": null,
+    "team_capacity": "待具体镜头/资产确认"
+  },
+  "reference_registry": ".vfx/style-references.json",
+  "sources": {
+    "asset_index": "PROJECT_ASSETS.md",
+    "project_index": "踏星项目资料目录索引.md",
+    "vfx_catalog": "踏星_全景战技与视效工程资产总库.md",
+    "vfx_mapping": "data/vfx_assets_mapping.json",
+    "previews": "img/vfx",
+    "designs": "<PROJECT_ROOT>/Assets/其他设计",
+    "art_designs": "<PROJECT_ROOT>/Manager/美术/特效设计",
+    "storybook": "<PROJECT_ROOT>/Video_Final/StoryBook",
+    "layout": "<PROJECT_ROOT>/Video_Final/Layout",
+    "final_candidates": "<PROJECT_ROOT>/Video_Final/Final",
+    "feedback": "<PROJECT_ROOT>/审核反馈",
+    "lighting_references": "<PROJECT_ROOT>/参考资料/灯光氛围参考"
+  },
+  "delivery": {
+    "still": "按需一张镜头合成设计；需拆解时补说明",
+    "video": "按事件组织连续关键帧与阶段提示词",
+    "actual_media_required_when_requested": true,
+    "force_three_options": false,
+    "claim_engine_implementation": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "approved_references": [],
+  "approval_policy": "用户明确确认或真实审批记录；文件名/目录不视为批准",
+  "candidates": [
+    {
+      "id": "bodongzhang-design",
+      "effect": "波动掌",
+      "path": "Y:\\TX\\Assets\\其他设计\\BoDongZhang\\Design\\BoDongZhang.jpg",
+      "preview": "Y:\\TX\\AI\\img\\vfx\\BoDongZhang.jpg",
+      "status": "candidate",
+      "approval_evidence": null,
+      "inspection": "仅查看项目预览板；未逐像素审核原始大图",
+      "observations": [
+        "青蓝/紫色能量手形轮廓",
+        "发光边缘与内部流纹分层",
+        "板内含局部结构参考"
+      ],
+      "constraints": "只供波动掌相关检索，不强制其他技能同色同形"
+    },
+    {
+      "id": "hanbing-design",
+      "effect": "寒冰天赋",
+      "path": "Y:\\TX\\Assets\\其他设计\\HanBingTianFu\\Design\\HanBingTianfu_FX.jpg",
+      "preview": "Y:\\TX\\AI\\img\\vfx\\HanBingTianFu.jpg",
+      "status": "candidate",
+      "approval_evidence": null,
+      "inspection": "仅查看项目预览板；未检验原始图细节或真实动态",
+      "observations": [
+        "冰蓝分支和丝状流线",
+        "围绕人物的多方向放射与地面冰晶关系",
+        "板内存在阶段性画面与分镜示意"
+      ],
+      "constraints": "阶段为静态板观察，不代表已经审核动态节奏"
+    },
+    {
+      "id": "ep001-final-candidate",
+      "path": "Y:\\TX\\Video_Final\\Final\\EP001.mp4",
+      "status": "candidate",
+      "approval_evidence": null,
+      "inspection": "核对文件存在；本次未观看内容，不提炼其色彩/动态"
+    }
+  ]
+}
