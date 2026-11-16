@@ -1,0 +1,15 @@
+{
+  "name": "nl-workbench",
+  "version": "0.1.0",
+  "description": "年轮AI (nl.nianlunai.com) CLI + stdio MCP server — canvas/AIGC/plugin-run automation, 踏星专用",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "nl": "./nl.mjs",
+    "nl-mcp": "./nl-mcp.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node nl.mjs user"
+  }
+}

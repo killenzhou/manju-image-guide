@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nianlun": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["F:/alienbrainWork/TX/AI/nl-workbench/nl-mcp.mjs"]
+    }
+  },
+  "_devin": "devin mcp add --transport stdio -- nianlun node F:/alienbrainWork/TX/AI/nl-workbench/nl-mcp.mjs",
+  "_codex": "codex mcp add nianlun -- node F:/alienbrainWork/TX/AI/nl-workbench/nl-mcp.mjs",
+  "_note": "token 无需配置：运行 nl-mcp 的机器上浏览器登录过 nl.nianlunai.com 即自动取 token；跨机器用 NL_TOKEN 环境变量传入"
+}
