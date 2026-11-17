@@ -23,6 +23,10 @@
 
 ---
 
+## 首版风格与参考库
+
+按[首版风格与参考库](skills/tx-layout-atmosphere/references/cinematic-look-standard.md)选择一张已通过样板，先做画面质感与层次；具体用光按场次调整。图库入项目资产盘，不依赖下载目录，实际镜头图和素材不纳入本仓库。
+
 ## 技能清单（`skills/`）
 
 | 技能目录 | 功能定位 | 核心文件与脚本 |
