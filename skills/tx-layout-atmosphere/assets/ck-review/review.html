@@ -1,46 +1,208 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>踏星｜CK 审核</title>
 <style>
-:root{color-scheme:dark;background:#10161b;color:#e9eef0;font:15px system-ui}*{box-sizing:border-box}body{margin:0}header{padding:24px 28px 16px;background:#182329;border-bottom:1px solid #344850}h1{font-size:24px;margin:0 0 10px}p{margin:8px 0;color:#b5c8cc}main{padding:18px 28px;max-width:1650px;margin:auto}nav,.tools,.actions{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}button,select,input,textarea{font:inherit}button,select{cursor:pointer;color:inherit;background:#23343b;border:1px solid #3d5962;padding:8px 12px;border-radius:7px}button.active,button.primary{background:#285b50;border-color:#57ad97}button:disabled{opacity:.4;cursor:not-allowed}.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}figure{margin:0;background:#162027;overflow:hidden;border-radius:9px}figcaption{padding:10px}figure img{width:100%;display:block;background:#0b1013}section{margin:16px 0;padding:14px;background:#19252c;border-radius:9px}h2{font-size:17px;margin:0 0 8px}.stage{position:relative;max-width:980px}.stage img{width:100%;display:block}.stage canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}textarea{width:100%;min-height:88px;padding:9px;color:inherit;background:#10191c;border:1px solid #3d5962;border-radius:6px}.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin:8px 0}.checks label{display:grid;gap:4px}.muted{color:#acc0c5}.warn{color:#ffcb82}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.art{max-width:650px;width:100%;display:block;margin:10px 0}#status{font-weight:650}input[type=file]{max-width:280px}@media(max-width:800px){.figures{grid-template-columns:1fr}main{padding:12px}}
+:root{
+  --bg:#17171a; --panel:#212125; --panel2:#26262b; --panel3:#2c2c32;
+  --line:#34343c; --line2:#454550;
+  --txt:#dcdce2; --muted:#8f8f9a; --dim:#6a6a75;
+  --accent:#2fb3d4; --accent-dim:#1c7a92;
+  --ok:#58b27a; --ok-dim:#2c5c40;
+  --warn:#d8a23a; --bad:#e0604f; --bad-dim:#6e322b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+img{user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+html,body{height:100%}
+body{background:var(--bg);color:var(--txt);font:13px/1.5 "Segoe UI",system-ui,"Microsoft YaHei",sans-serif;overflow:hidden;display:flex;flex-direction:column}
+button,select,input,textarea{font:inherit;color:inherit}
+button{background:var(--panel3);border:1px solid var(--line2);border-radius:5px;padding:6px 12px;cursor:pointer}
+button:hover:not(:disabled){background:#36363d;border-color:var(--accent-dim)}
+button:disabled{opacity:.38;cursor:not-allowed}
+button.active{background:var(--accent-dim);border-color:var(--accent);color:#fff}
+select,input[type=color],input[type=text]{background:var(--panel3);border:1px solid var(--line2);border-radius:5px;padding:5px 8px}
+input[type=color]{padding:2px;width:38px;height:28px;cursor:pointer}
+textarea{width:100%;background:#141417;border:1px solid var(--line2);border-radius:5px;padding:8px;resize:vertical;min-height:96px;color:var(--txt)}
+textarea:focus,input[type=text]:focus{border-color:var(--accent);outline:none}
 
-.desk{display:grid;grid-template-columns:minmax(0,1fr) minmax(255px,340px);gap:14px;align-items:start}
-.viewer,.review{margin:0;padding:14px;border-radius:12px;background:#19252c}.review{position:sticky;top:12px}.stage{max-width:none}
-.review textarea{min-height:132px;resize:vertical}.review .actions{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}
-.review .actions button{min-height:42px;font-weight:650}.review .muted{font-size:13px}.review #note{font-size:14px}
-.title{margin:8px 0 12px}nav{flex-wrap:nowrap;overflow:auto;padding-bottom:5px}nav button{white-space:nowrap}
-.detail{margin-top:12px;background:#19252c;border-radius:9px}.detail summary{padding:11px 14px;cursor:pointer;font-weight:600}.detailBody{padding:0 14px 14px}.tools{gap:6px;margin-bottom:10px}.tools button,.tools select{padding:6px 9px}
-@media(max-width:880px){.desk{grid-template-columns:minmax(0,1fr)}.review{position:static}.review textarea{min-height:82px}}
+/* ── 顶栏 ── */
+header{display:flex;align-items:center;gap:14px;padding:8px 16px;background:#1d1d21;border-bottom:1px solid #0d0d0f;flex:none}
+header .logo{width:9px;height:9px;border-radius:2px;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+header h1{font-size:14px;font-weight:600;letter-spacing:.4px}
+header .sub{color:var(--muted);font-size:12px}
+header .spacer{flex:1}
+.progress{display:flex;gap:10px;align-items:center;font-size:12px;color:var(--muted)}
+.progress b{font-weight:600}
+.pg-ok b{color:var(--ok)} .pg-bad b{color:var(--bad)} .pg-todo b{color:var(--warn)}
+.io{display:flex;gap:8px;align-items:center}
+.io input[type=file]{display:none}
+.io label{background:var(--panel3);border:1px solid var(--line2);border-radius:5px;padding:6px 12px;cursor:pointer}
+.io label:hover{border-color:var(--accent-dim)}
+#nextTodo{font-size:12px;padding:5px 10px}
 
-.review-card{padding:14px 0 24px;margin-bottom:14px;border-bottom:1px solid #394950;scroll-margin-top:12px}
-.review-card:last-child{margin-bottom:0}.review-card .title{font-size:17px}
-.review-card .review{position:static}.review-card .stage img[width]{height:auto}
+main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 336px;min-height:0}
+body.board main{grid-template-columns:minmax(0,1fr)}
+body.board aside{display:none}
+
+/* ── 左：看图区 ── */
+.stage-wrap{display:flex;flex-direction:column;min-width:0;min-height:0;background:#101013}
+.tabs{display:flex;gap:2px;padding:6px 10px 0;background:#1a1a1e;border-bottom:1px solid #0d0d0f}
+.tab{display:flex;align-items:center;gap:8px;padding:6px 14px 8px;border:1px solid transparent;border-bottom:none;border-radius:6px 6px 0 0;background:transparent;color:var(--muted);cursor:pointer;font-size:12px}
+.tab img{width:34px;height:20px;object-fit:cover;border-radius:3px;background:#000;display:block}
+.tab.active{background:#101013;color:var(--txt);border-color:var(--line);position:relative}
+.tab.active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent)}
+.tab.no-img img{visibility:hidden}
+.tab:disabled{opacity:.35}
+.tabbar-btn{margin-left:auto;align-self:center;padding:3px 12px;font-size:12px}
+.tabbar-btn.active{background:var(--accent-dim);border-color:var(--accent);color:#fff}
+#cmpBtn{margin-left:6px}
+
+.viewer{flex:1;position:relative;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.viewer.panning{cursor:grabbing}
+.viewer .frame{position:relative;line-height:0;user-select:none;-webkit-user-select:none}
+.viewer img{max-width:100%;max-height:100%;object-fit:contain;display:block;box-shadow:0 0 0 1px #000,0 8px 40px rgba(0,0,0,.55);cursor:zoom-in;background:#0a0a0c;-webkit-user-drag:none;user-select:none}
+#cmpImg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;box-shadow:none;cursor:ew-resize}
+#cmpImg[hidden],#cmpBar[hidden],.cmpTag[hidden]{display:none!important}
+.viewer canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.viewer canvas.off{pointer-events:none;visibility:hidden}
+#cmpBar{position:absolute;top:0;bottom:0;width:10px;margin-left:-5px;cursor:ew-resize;z-index:2;touch-action:none}
+#cmpBar::before{content:"";position:absolute;left:4px;top:0;bottom:0;width:2px;background:var(--accent);box-shadow:0 0 6px rgba(0,0,0,.8)}
+#cmpBar i{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:24px;height:24px;border-radius:50%;background:var(--accent);color:#06222a;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;font-style:normal}
+.cmpTag{position:absolute;top:8px;font-size:10px;background:rgba(16,16,19,.85);border:1px solid var(--line);padding:2px 7px;border-radius:3px;z-index:2;pointer-events:none;color:var(--muted)}
+.cmpTag.l{left:8px}.cmpTag.r{right:8px}
+.counter{position:absolute;left:12px;top:10px;background:rgba(16,16,19,.82);border:1px solid var(--line);border-radius:5px;padding:3px 10px;font-size:12px;color:var(--muted);pointer-events:none;z-index:3}
+.zoomhint{position:absolute;right:12px;top:10px;background:rgba(16,16,19,.82);border:1px solid var(--line);border-radius:5px;padding:3px 10px;font-size:11px;color:var(--dim);pointer-events:none;z-index:3}
+.hold-banner{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;max-width:70%;background:rgba(110,50,43,.92);border:1px solid var(--bad);border-radius:6px;padding:7px 14px;font-size:12px;color:#ffd9d2;z-index:3;pointer-events:none}
+
+/* 全部对照（默认主页） */
+.overview{position:absolute;inset:0;overflow-y:auto;background:#101013;z-index:4;scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+.ov-filter{position:sticky;top:0;z-index:5;display:flex;gap:6px;align-items:center;padding:8px 14px;background:rgba(16,16,19,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(4px)}
+.ov-filter .ft{font-size:11px;color:var(--dim);margin-right:2px}
+.fchip{font-size:11px;padding:3px 10px;border-radius:10px}
+.fchip.active{background:var(--accent-dim);border-color:var(--accent)}
+.ov-cell .tag{position:absolute;left:4px;top:4px;background:rgba(16,16,19,.85);font-size:10px;padding:1px 6px;border-radius:3px;line-height:1.4;color:var(--muted)}
+
+/* 对照行 */
+.ov-table{display:grid;grid-template-columns:150px repeat(4,minmax(0,1fr)) 288px;gap:8px;align-items:start;min-width:1060px;padding:10px 14px}
+.ov-head{font-size:11px;color:var(--muted);padding:2px 0}
+.ov-id{display:flex;flex-direction:column;gap:4px;padding-top:2px;cursor:pointer}
+.ov-id b{font-size:12px}
+.ov-id b:hover{color:var(--accent)}
+.ov-id .sname{font-size:10px;color:var(--muted);line-height:1.3}
+.ov-id .cand{font-size:10px;color:var(--dim)}
+.ov-cell{background:#0a0a0c;border:1px solid var(--line);border-radius:5px;overflow:hidden;cursor:pointer;position:relative;line-height:0;min-height:34px}
+.ov-cell img{width:100%;display:block}
+.ov-cell:hover{border-color:var(--accent)}
+.ov-cell.empty{display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:11px;line-height:1.5;padding:10px 0;min-height:56px}
+.ov-cell.curcell{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent-dim)}
+.cellhide{display:none!important}
+.ov-ctl{display:flex;flex-direction:column;gap:5px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:7px}
+.ov-ctl .brow{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.ov-ctl textarea{min-height:34px;font-size:11px;padding:4px 7px;resize:vertical}
+.ov-ctl select,.ov-ctl input[type=text]{font-size:11px;padding:3px 6px;width:100%}
+.dimrow{display:flex;gap:4px}
+.dimchip{flex:1;padding:2px 0;font-size:11px;text-align:center;border-radius:4px;border:1px solid var(--line2);background:var(--panel3);color:var(--dim);cursor:pointer}
+.dimchip.ok{background:var(--ok-dim);border-color:var(--ok);color:#cfeeda}
+.dimchip.fail{background:var(--bad-dim);border-color:var(--bad);color:#ffd5cd}
+.dimchip.exception{background:#5c4a1e;border-color:var(--warn);color:#ffe3ad}
+.btnrow{display:grid;grid-template-columns:1fr 1fr auto;gap:6px}
+.btnrow button{padding:5px;font-size:12px;font-weight:600}
+.okbtn{background:var(--ok-dim);border-color:var(--ok);color:#dff5e6}
+.revbtn{background:var(--bad-dim);border-color:var(--bad);color:#ffdcd5}
+.ov-ctl .st{font-size:11px;font-weight:600}
+.st.todo{color:var(--warn)} .st.ok{color:var(--ok)} .st.bad{color:var(--bad)}
+.ov-ctl.big textarea{min-height:56px}
+
+/* ── 本地 VLM 初审 ── */
+#vlmstat{font-size:11px;padding:5px 10px}
+#vlmstat.on{color:var(--ok);border-color:var(--ok-dim)}
+.vlmbtn{padding:5px 9px;font-size:11px;font-weight:600;color:var(--accent)}
+.vlmc{border:1px solid var(--line2);border-radius:5px;background:#191920;padding:5px 7px;font-size:11px;display:grid;gap:4px}
+.vlmc .vhead{display:flex;align-items:center;gap:6px}
+.vlmc .vver{font-weight:700}
+.vlmc .vver.pass{color:var(--ok)}.vlmc .vver.hold{color:var(--warn)}.vlmc .vver.reject{color:var(--bad)}
+.vdots{display:flex;gap:3px;margin-left:auto}
+.vdot{width:14px;height:14px;border-radius:3px;font-size:9px;display:flex;align-items:center;justify-content:center;background:var(--panel3);color:var(--dim);border:1px solid var(--line2)}
+.vdot.ok{background:var(--ok-dim);color:#cfeeda;border-color:var(--ok)}
+.vdot.fail{background:var(--bad-dim);color:#ffd5cd;border-color:var(--bad)}
+.vdot.exception{background:#5c4a1e;color:#ffe3ad;border-color:var(--warn)}
+.vlmc .vsum{color:var(--muted);line-height:1.35}
+.vlmc .vdetail{color:var(--muted);font-size:10px;display:none;white-space:pre-wrap;max-height:130px;overflow:auto;scrollbar-width:thin}
+.vlmc.open .vdetail{display:block}
+.vlmc .vbtns{display:flex;gap:5px}
+.vlmc .vbtns button{font-size:10px;padding:2px 8px}
+.vlmc .verr{color:var(--bad);line-height:1.4}
+#vlmrun{color:var(--accent);font-weight:700}
+
+/* 胶片条 */
+.filmstrip{flex:none;height:118px;background:#1a1a1e;border-top:1px solid #0d0d0f;padding:8px 10px;display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+.thumb{flex:none;width:150px;cursor:pointer;border:2px solid transparent;border-radius:6px;overflow:hidden;background:#000;position:relative;transition:border-color .12s}
+.thumb img{width:100%;height:78px;object-fit:cover;display:block;opacity:.62;transition:opacity .12s}
+.thumb:hover img{opacity:.9}
+.thumb.cur{border-color:var(--accent)}
+.thumb.cur img{opacity:1}
+.thumb .lab{height:26px;display:flex;align-items:center;justify-content:space-between;padding:0 8px;background:#202025;font-size:11px;color:var(--muted)}
+.thumb.cur .lab{color:var(--txt)}
+.dot{width:7px;height:7px;border-radius:50%;flex:none}
+.dot.todo{background:var(--warn)} .dot.ok{background:var(--ok)} .dot.bad{background:var(--bad)}
+
+/* ── 右：检查器 ── */
+aside{background:var(--panel);border-left:1px solid #0d0d0f;overflow-y:auto;display:flex;flex-direction:column;scrollbar-width:thin;scrollbar-color:var(--line2) transparent}
+aside>*{padding:12px 14px;border-bottom:1px solid var(--line)}
+aside>*:last-child{border-bottom:none}
+.shot-head .id{font-size:16px;font-weight:600;display:flex;align-items:center;gap:8px}
+.badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:9px;border:1px solid}
+.badge.todo{color:var(--warn);border-color:var(--warn);background:rgba(216,162,58,.1)}
+.badge.ok{color:var(--ok);border-color:var(--ok);background:rgba(88,178,122,.1)}
+.badge.bad{color:var(--bad);border-color:var(--bad);background:rgba(224,96,79,.1)}
+.meta{margin-top:6px;color:var(--muted);font-size:12px;display:grid;gap:2px}
+.meta code{color:var(--dim);font-size:11px}
+.note{color:var(--warn);font-size:12px}
+.f-label{font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
+.chips{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+.chips button{font-size:11px;padding:2px 8px;border-radius:9px;color:var(--muted)}
+.tools{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tools button{padding:5px 10px;font-size:12px}
+.hint{font-size:11px;color:var(--dim);margin-top:6px}
+.gate{margin-top:8px;font-size:12px;color:var(--warn)}
+.gate.free{color:var(--ok)}
+.actions{display:grid;grid-template-columns:1fr 1fr auto;gap:8px}
+.actions button{padding:10px;font-weight:600;font-size:13px}
+#approve{background:var(--ok-dim);border-color:var(--ok);color:#dff5e6}
+#approve:hover:not(:disabled){background:#37714e}
+#revise{background:var(--bad-dim);border-color:var(--bad);color:#ffdcd5}
+#revise:hover:not(:disabled){background:#8a423a}
+details .sum{font-size:12px;color:var(--muted);cursor:pointer;list-style:none}
+details .sum::before{content:"▸ ";color:var(--dim)}
+details[open] .sum::before{content:"▾ "}
+details .body{padding-top:8px}
+.art img{width:100%;border-radius:5px;cursor:zoom-in;border:1px solid var(--line)}
+.art .src{font-size:11px;color:var(--dim);margin-top:4px;word-break:break-all}
+.checks{display:grid;gap:8px}
+.checks label{display:grid;gap:3px;font-size:12px;color:var(--muted)}
+.checks select{width:100%}
+.ev{margin-top:8px}
+.ev textarea{min-height:64px;font-size:12px}
+@media(max-width:960px){main{grid-template-columns:minmax(0,1fr) 280px}}
 </style>
-<header><h1>踏星 · 场次 CK 审核</h1><p>往下滚动逐张审核；每张图的意见、批注和决定独立保存。</p></header>
+<header>
+<div class="logo"></div><h1>踏星 · 场次 CK 审核</h1><span class="sub">对照板为首页 · 滚轮/←/→ 切镜 · Ctrl+滚轮缩放 · G 对照板 · C 对比Layout · N 下一待确认</span>
+<div class="spacer"></div>
+<div class="progress"><span class="pg-ok">通过 <b id="pg-ok">0</b></span><span class="pg-bad">退回 <b id="pg-bad">0</b></span><span class="pg-todo">待确认 <b id="pg-todo">0</b></span></div>
+<button id="vlmstat" title="本地模型初审服务：点击设置地址 / 刷新状态">○ 本地初审</button>
+<button id="nextTodo" title="跳到下一个待确认">⇥ 下一待确认</button>
+<div class="io"><button id="export">导出本批记录</button><label>恢复记录<input id="import" type="file" accept=".json,application/json"></label></div>
+</header>
 <main>
-<div id="review-list"></div>
-<template id="review-card">
-<div class="row title"><strong id="shot"></strong><span id="status"></span></div>
-<div class="desk">
-<section class="viewer" aria-label="镜头预览与画面批注">
-<div class="tools"><label>标注图层 <select id="layer"><option value="file">成图</option><option value="layout">Layout</option><option value="storyboard">分镜</option><option value="art">美术设计</option></select></label><button id="pen">画笔</button><button id="pin">编号标记</button><label>颜色 <input id="color" type="color" value="#ff8957"></label><button id="undo">撤销</button><button id="clear">清空该图批注</button></div>
-<div class="stage"><img id="annotImage" alt="批注底图"><canvas id="canvas" aria-label="图像批注"></canvas></div>
-
+<section class="stage-wrap">
+<div class="tabs" id="tabs"><button id="cmpBtn" class="tabbar-btn" title="成图与 Layout 拖杆对比">⇔ 对比Layout</button><button id="ovbtn" class="tabbar-btn active" title="一屏对照全部镜头">⊞ 全部对照</button></div>
+<div class="viewer" id="viewer"><div class="counter" id="counter"></div><div class="zoomhint" id="zoomhint" hidden>滚轮缩放 · 拖拽平移 · Esc 复位</div><div class="frame" id="frame"><img id="annotImage" alt="" draggable="false"><img id="cmpImg" alt="" draggable="false" hidden><canvas id="canvas"></canvas><div id="cmpBar" hidden><i>⇔</i></div><span class="cmpTag l" id="cmpTagL" hidden>Layout</span><span class="cmpTag r" id="cmpTagR" hidden>成图</span></div><div class="hold-banner" id="holdbar" hidden></div><div class="overview" id="overview"></div></div>
+<div class="filmstrip" id="film"></div>
 </section>
-<aside class="review"><h2>修改意见</h2>
-<p id="note"></p>
-<textarea id="feedback" aria-label="修改意见" placeholder="写下要改的地方，或在左图标个编号。"></textarea>
-<p id="gate" class="warn" aria-live="polite"></p>
-<div class="actions"><button id="approve" class="primary">通过</button><button id="revise">退回修改</button></div>
-<p class="muted">批注自动存草稿，提交时下载记录。</p></aside>
-</div>
-<details class="detail" id="comparison"><summary>查看分镜、Layout 与成图对照</summary><div class="detailBody">
-<div class="figures"><figure><figcaption>分镜 · 同帧联排左栏</figcaption><a id="sbLink" target="_blank"><img id="sb" alt="分镜截图"></a></figure><figure><figcaption>Layout · 有效画面</figcaption><a id="lyLink" target="_blank"><img id="ly" alt="Layout 原帧"></a></figure><figure><figcaption>成图 · 点击看原图</figcaption><a id="renderLink" target="_blank"><img id="render" alt="CK 成图"></a></figure></div>
-</div></details>
-<details class="detail" id="qa"><summary>美术设计与制作自检</summary><div class="detailBody"><p id="artNote" class="warn"></p><a id="artLink" target="_blank"><img id="art" class="art" alt="场景美术候选"></a><p id="artSource"></p>
-<label>适用设计状态 <select id="basis"><option value="">待核对</option><option value="matched">已核到并确认适用版本</option><option value="none">已查，无适用设计</option></select></label>
-<div class="checks" id="checks"></div><label>核对依据／无设计的查找范围／批准的偏离理由<textarea id="evidence" placeholder="例：对照图纸版本 X，入口在右、间接冷光；删掉模型添加的顶灯。"></textarea></label>
-</div></details>
-
-</template>
-<details class="detail"><summary>导出或恢复审核记录</summary><div class="detailBody actions"><button id="export">导出本批记录</button><label>恢复记录 <input id="import" type="file" accept=".json,application/json"></label></div></details>
+<aside>
+<div class="shot-head"><div class="id"><span id="sid"></span><span class="badge todo" id="badge">待确认</span></div><div class="meta" id="meta"></div><div class="note" id="note"></div></div>
+<div><div class="f-label">修改意见</div><div class="chips" id="chips"></div><textarea id="feedback" placeholder="写下要改的点，或在左图上用画笔／编号标出来。"></textarea><div class="gate" id="gate"></div><div id="vlmcard" class="vlmc" hidden></div><div class="actions"><button id="approve">通过</button><button id="revise">退回修改</button><button id="vlmrun" class="vlmbtn" title="本地模型五维初审（Layout+美术+成图）">AI</button></div></div>
+<div><div class="f-label">画面批注（作用于当前图层）</div><div class="tools"><button id="pen">画笔</button><button id="pin">编号</button><input id="color" type="color" value="#ff8957"><button id="undo">撤销</button><button id="clear">清空</button></div><div class="hint">画笔拖拽圈画；编号模式点一下落一个序号标记。批注草稿自动保存。</div></div>
+<details class="art"><summary class="sum">美术设计依据</summary><div class="body"><img id="art" alt="" hidden><div class="src" id="artSource"></div><div class="note" id="artNote"></div></div></details>
+<details><summary class="sum">一致性核对（通过前必填）</summary><div class="body checks"><label>适用设计状态 <select id="basis"><option value="">待核对</option><option value="matched">已核到并确认适用版本</option><option value="none">已查，无适用设计</option></select></label><div id="dimchecks" class="checks"></div><label class="ev">核对依据／无设计查找范围／偏离理由<textarea id="evidence" placeholder="例：对照图纸版本 X，入口在右、间接冷光；删掉模型添加的顶灯。"></textarea></label></div></details>
+<details><summary class="sum">生成信息</summary><div class="body"><div class="meta" id="geninfo"></div></div></details>
+</aside>
 </main>
-<script src="review-data.js"></script><script src="review.js"></script></html>
+<script src="review-data.js"></script><script src="review-v2.js"></script></html>
