@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>踏星｜CK 审核</title>
+<style>
+:root{color-scheme:dark;background:#10161b;color:#e9eef0;font:15px system-ui}*{box-sizing:border-box}body{margin:0}header{padding:24px 28px 16px;background:#182329;border-bottom:1px solid #344850}h1{font-size:24px;margin:0 0 10px}p{margin:8px 0;color:#b5c8cc}main{padding:18px 28px;max-width:1650px;margin:auto}nav,.tools,.actions{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}button,select,input,textarea{font:inherit}button,select{cursor:pointer;color:inherit;background:#23343b;border:1px solid #3d5962;padding:8px 12px;border-radius:7px}button.active,button.primary{background:#285b50;border-color:#57ad97}button:disabled{opacity:.4;cursor:not-allowed}.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}figure{margin:0;background:#162027;overflow:hidden;border-radius:9px}figcaption{padding:10px}figure img{width:100%;display:block;background:#0b1013}section{margin:16px 0;padding:14px;background:#19252c;border-radius:9px}h2{font-size:17px;margin:0 0 8px}.stage{position:relative;max-width:980px}.stage img{width:100%;display:block}.stage canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}textarea{width:100%;min-height:88px;padding:9px;color:inherit;background:#10191c;border:1px solid #3d5962;border-radius:6px}.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin:8px 0}.checks label{display:grid;gap:4px}.muted{color:#acc0c5}.warn{color:#ffcb82}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.art{max-width:650px;width:100%;display:block;margin:10px 0}#status{font-weight:650}input[type=file]{max-width:280px}@media(max-width:800px){.figures{grid-template-columns:1fr}main{padding:12px}}
+
+.desk{display:grid;grid-template-columns:minmax(0,1fr) minmax(255px,340px);gap:14px;align-items:start}
+.viewer,.review{margin:0;padding:14px;border-radius:12px;background:#19252c}.review{position:sticky;top:12px}.stage{max-width:none}
+.review textarea{min-height:132px;resize:vertical}.review .actions{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}
+.review .actions button{min-height:42px;font-weight:650}.review .muted{font-size:13px}.review #note{font-size:14px}
+.title{margin:8px 0 12px}nav{flex-wrap:nowrap;overflow:auto;padding-bottom:5px}nav button{white-space:nowrap}
+.detail{margin-top:12px;background:#19252c;border-radius:9px}.detail summary{padding:11px 14px;cursor:pointer;font-weight:600}.detailBody{padding:0 14px 14px}.tools{gap:6px;margin-bottom:10px}.tools button,.tools select{padding:6px 9px}
+@media(max-width:880px){.desk{grid-template-columns:minmax(0,1fr)}.review{position:static}.review textarea{min-height:82px}}
+
+.review-card{padding:14px 0 24px;margin-bottom:14px;border-bottom:1px solid #394950;scroll-margin-top:12px}
+.review-card:last-child{margin-bottom:0}.review-card .title{font-size:17px}
+.review-card .review{position:static}.review-card .stage img[width]{height:auto}
+</style>
+<header><h1>踏星 · 场次 CK 审核</h1><p>往下滚动逐张审核；每张图的意见、批注和决定独立保存。</p></header>
+<main>
+<div id="review-list"></div>
+<template id="review-card">
+<div class="row title"><strong id="shot"></strong><span id="status"></span></div>
+<div class="desk">
+<section class="viewer" aria-label="镜头预览与画面批注">
+<div class="tools"><label>标注图层 <select id="layer"><option value="file">成图</option><option value="layout">Layout</option><option value="storyboard">分镜</option><option value="art">美术设计</option></select></label><button id="pen">画笔</button><button id="pin">编号标记</button><label>颜色 <input id="color" type="color" value="#ff8957"></label><button id="undo">撤销</button><button id="clear">清空该图批注</button></div>
+<div class="stage"><img id="annotImage" alt="批注底图"><canvas id="canvas" aria-label="图像批注"></canvas></div>
+
+</section>
+<aside class="review"><h2>修改意见</h2>
+<p id="note"></p>
+<textarea id="feedback" aria-label="修改意见" placeholder="写下要改的地方，或在左图标个编号。"></textarea>
+<p id="gate" class="warn" aria-live="polite"></p>
+<div class="actions"><button id="approve" class="primary">通过</button><button id="revise">退回修改</button></div>
+<p class="muted">批注自动存草稿，提交时下载记录。</p></aside>
+</div>
+<details class="detail" id="comparison"><summary>查看分镜、Layout 与成图对照</summary><div class="detailBody">
+<div class="figures"><figure><figcaption>分镜 · 同帧联排左栏</figcaption><a id="sbLink" target="_blank"><img id="sb" alt="分镜截图"></a></figure><figure><figcaption>Layout · 有效画面</figcaption><a id="lyLink" target="_blank"><img id="ly" alt="Layout 原帧"></a></figure><figure><figcaption>成图 · 点击看原图</figcaption><a id="renderLink" target="_blank"><img id="render" alt="CK 成图"></a></figure></div>
+</div></details>
+<details class="detail" id="qa"><summary>美术设计与制作自检</summary><div class="detailBody"><p id="artNote" class="warn"></p><a id="artLink" target="_blank"><img id="art" class="art" alt="场景美术候选"></a><p id="artSource"></p>
+<label>适用设计状态 <select id="basis"><option value="">待核对</option><option value="matched">已核到并确认适用版本</option><option value="none">已查，无适用设计</option></select></label>
+<div class="checks" id="checks"></div><label>核对依据／无设计的查找范围／批准的偏离理由<textarea id="evidence" placeholder="例：对照图纸版本 X，入口在右、间接冷光；删掉模型添加的顶灯。"></textarea></label>
+</div></details>
+
+</template>
+<details class="detail"><summary>导出或恢复审核记录</summary><div class="detailBody actions"><button id="export">导出本批记录</button><label>恢复记录 <input id="import" type="file" accept=".json,application/json"></label></div></details>
+</main>
+<script src="review-data.js"></script><script src="review.js"></script></html>

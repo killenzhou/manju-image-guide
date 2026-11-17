@@ -6,6 +6,12 @@
 
 ---
 
+## 出片审核与场次 CK
+
+- 整集或整场先按 Layout 选代表全景定氛围和色调；打斗另定特效标准镜。范围内必需 CK 全部通过并归档后，才进入后续制作；明确跳过则另记。
+- CK、正式镜头、返修共用[出片审核规范](skills/tx-layout-atmosphere/references/ck-review.md)：制作端先自检；候选纵向排列，可直接写意见、画线、编号，或通过／退回。模型与渲染方式不改变审核标准。
+- 退回后逐条返修、重出、复检，再按新版本重新送审。内附[可复用审核页模板](skills/tx-layout-atmosphere/assets/ck-review/)；仓库不含项目实际图片或审核数据。
+
 ## 核心规范与工作流原则
 
 项目根规范详见 [AGENTS.md](AGENTS.md) 与 [.vfx/project.json](.vfx/project.json)：
