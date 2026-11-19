@@ -142,7 +142,7 @@ $('pen').classList.add('active');
 const ctlPaints=rows.map(()=>[]);
 function mkCtl(r,i,big){
   const ctl=document.createElement('div');ctl.className='ov-ctl'+(big?' big':'');
-  ctl.innerHTML='<div class="brow"><span class="st todo">待确认</span><span style="font-size:10px;color:var(--dim)">'+(r.hold?'⛔ 拦截':'')+'</span></div>'
+  ctl.innerHTML='<div class="brow"><span class="st todo">待确认</span><span style="font-size:10px;color:var(--dim)">'+(r.hold?'已拦截':'')+'</span></div>'
     +'<textarea class="fb" placeholder="修改意见…"></textarea>'
     +'<select class="bs"><option value="">设计：待核对</option><option value="matched">设计：已核适用</option><option value="none">设计：无适用</option></select>'
     +'<div class="dimrow"></div>'
@@ -294,6 +294,8 @@ async function runVlmAll(btn){
 
 /* ── 对照板：全部镜头等大同格式行 ── */
 const ov=$('overview'),ovbtn=$('ovbtn');
+const IC={grid:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg>',
+image:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 4-4 5 5"/></svg>'};
 const idDots=[];
 function imgCell(r,i,f){
   const c=document.createElement('div');c.dataset.shot=i;
@@ -344,7 +346,7 @@ function applyFilter(){
 }
 function ovToggle(on){
   ov.style.display=on?'':'none';ovbtn.classList.toggle('active',on);
-  ovbtn.textContent=on?'✕ 返回单图':'⊞ 全部对照';
+  ovbtn.innerHTML=(on?IC.image+'返回单图':IC.grid+'全部对照');
   document.body.classList.toggle('board',on);
   if(on){applyFilter();filmSync()}
 }
@@ -372,10 +374,10 @@ function edit(r,i,reset=true){
 function refresh(){
   const r=row(),s=st(r);
   const cls=statusCls(s.status);
-  const b=$('badge');b.textContent='· '+s.status;b.className='badge '+cls;
+  const b=$('badge');b.textContent=s.status;b.className='badge '+cls;
   const prod=production(r);
   const g=$('gate');
-  if(r.hold){g.textContent='⛔ '+r.hold;g.className='gate'}
+  if(r.hold){g.textContent='拦截：'+r.hold;g.className='gate'}
   else if(prod||approved(r)||eligible(s)){g.textContent='自检已完成，可以审核。';g.className='gate free'}
   else{g.textContent='通过前需完成一致性核对（或留意见退回）。';g.className='gate'}
   $('approve').disabled=!ready(s,r);
@@ -388,11 +390,11 @@ function show(i){
   $('counter').textContent=sh.shot+' · '+r.id+' · '+(idx+1)+' / '+rows.length;
   $('sid').textContent=sh.shot+(sh.name?'　'+sh.name:'');
   $('meta').innerHTML='';
-  const meta=[['候选号',r.id],['版本',r.version],['Layout 秒点',r.t+' s'],['尺寸',r.size.join(' × ')],['来源',r.source]];
+  const meta=[['候选号',r.id],['版本',r.version],['Layout 取证',typeof r.t==='number'?r.t+' s':(r.t||'—')],['尺寸',(Array.isArray(r.size)?r.size.join(' × '):String(r.size??'—'))],['来源',r.source]];
   for(const[k,v]of meta){const d=document.createElement('div');d.innerHTML='<span style="color:var(--dim)">'+k+'</span>　'+esc(v);$('meta').append(d)}
   const shx=document.createElement('code');shx.textContent='sha256 '+r.sha256.slice(0,16)+'…';$('meta').append(shx);
   $('note').textContent=r.note||'';
-  $('holdbar').hidden=!r.hold;if(r.hold)$('holdbar').textContent='⛔ '+r.hold;
+  $('holdbar').hidden=!r.hold;if(r.hold)$('holdbar').textContent='拦截：'+r.hold;
   $('feedback').value=s.feedback||'';$('basis').value=s.basis||'';$('evidence').value=s.evidence||'';
   for(const k of Object.keys(dims))dimSel(k).value=s.checks[k]||'';
   const hasArt=Boolean(r.art);
