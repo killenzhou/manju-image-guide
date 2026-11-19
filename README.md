@@ -34,7 +34,7 @@
 
 | 技能目录 | 功能定位 | 核心文件与脚本 |
 | :--- | :--- | :--- |
-| [tx-layout-atmosphere](skills/tx-layout-atmosphere/SKILL.md) | **Layout → CG 电影氛围图与动态特效参考交付**<br>从 Layout/StoryBook 取证抽帧、资产与灯光对照、生成简报与 4K 交付验收；支持按镜号/剧情输出独立动态 GIF + 内嵌 GIF 的原生 PureRef 2.x `.pur` 参考板 | `scripts/shot_delivery.py`<br>`scripts/build_vfx_pur.py`<br>`scripts/search_vfx_refs.py`<br>`scripts/search_vfx_diverse.py`<br>`scripts/vfx_gif_cache.py` |
+| [tx-layout-atmosphere](skills/tx-layout-atmosphere/SKILL.md) | **Layout → CG 电影氛围图与动态特效参考交付**<br>从 Layout/StoryBook 取证抽帧、资产与灯光对照、生成简报与 4K 交付验收；支持按镜号/剧情输出独立动态 GIF + 内嵌 GIF 的原生 PureRef 2.x `.pur` 参考板，以及整集纯图（成图+Layout 按场次分列）`.pur` 展示板导出 | `scripts/shot_delivery.py`<br>`scripts/pur_export.py`<br>`scripts/build_vfx_pur.py`<br>`scripts/search_vfx_refs.py`<br>`scripts/search_vfx_diverse.py`<br>`scripts/vfx_gif_cache.py` |
 | [tx-review-render-router](skills/tx-review-render-router/SKILL.md) | **审核台单轮返修路由**<br>根据审核台 `feedback.json` 与确认记录，单轮调度 Codex 原生、A2E API 或即梦原生画布进行返修出图，只报告质检不自动循环 | `SKILL.md` |
 | [vfx-shot-design](skills/vfx-shot-design/SKILL.md) | **镜头 AI 特效设计主技能**<br>按意图选择 `Concept` / `Production` / `Hybrid` / `Style Match` 模式，规范结构分层、能量因果与 UE/Houdini 可落地建议 | `SKILL.md`<br>`references/output-standards.md` |
 | [creative-reference-search](skills/creative-reference-search/SKILL.md) | **创意参考搜索与共享参考入库**<br>跨来源检索灯光/场景/特效案例，生成每批 20 条的交互式 HTML 候选板（`board.html`），按授权规则归档可溯源参考 ID（`TXREF`）与高清关键帧 | `scripts/reference.py`<br>`scripts/media.py`<br>`assets/board.html` |
