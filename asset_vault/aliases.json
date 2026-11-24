@@ -1,0 +1,209 @@
+{
+  "陆隐": {
+    "default": "Character/LuYin_Xin",
+    "aliases": ["LuYin", "LuYin_Xin", "陆隐新装"],
+    "variants": [
+      "Character/LuYin_Xin",
+      "Character/LuYin_DaoShangBan",
+      "Character/LuYin_YouBiShangBanXin"
+    ],
+    "note": "默认指向常规蓝色丹宁新装(LuYin_Xin)；刀伤或右臂受伤镜头须显式指定 DaoShangBan / YouBiShangBanXin。"
+  },
+  "格兰妮": {
+    "default": "Character/GeLanNi",
+    "aliases": ["GeLanNi", "格兰妮3集", "格兰妮5集"],
+    "variants": [
+      "Character/GeLanNi",
+      "Character/GeLanNi_ShouKao",
+      "Character/GeLanNi_ShouShangBan"
+    ],
+    "note": "Character/GeLanNi 内按 slot 区分 face、front_ep3(白灰紧身战服)、front_ep5(无伤包)；EP004场1受铐用 GeLanNi_ShouKao，受伤绑带版须指定 GeLanNi_ShouShangBan。"
+  },
+  "周山": {
+    "default": "Character/ZhouShan",
+    "aliases": ["ZhouShan", "山哥"],
+    "variants": [
+      "Character/ZhouShan",
+      "Character/ZhouShan_BingHaoBan"
+    ],
+    "note": "冰镐/特殊服装版本须检查 ZhouShan 对应变体目录。"
+  },
+  "特蕾斯": {
+    "default": "Character/TeLeiSi",
+    "aliases": ["TeLeiSi"],
+    "variants": ["Character/TeLeiSi"],
+    "note": ""
+  },
+  "奥顿": {
+    "default": "Character/AoDun",
+    "aliases": ["AoDun"],
+    "variants": ["Character/AoDun", "Character/AoDun_ShiTiBan"],
+    "note": "死亡/尸体态须用 AoDun_ShiTiBan。"
+  },
+  "长发丧尸": {
+    "default": "Character/ChangFaSangShi",
+    "aliases": ["尸王", "长发尸王", "ChangFaSangShi", "蜘蛛尸王"],
+    "variants": ["Character/ChangFaSangShi", "Character/ChangFaSangShi_DuanTui", "Character/ChangFaSangShi_ShiTi"],
+    "note": "断腿或尸体态须指定对应版本。"
+  },
+  "章顶天": {
+    "default": "Character/ZhangDingTian",
+    "aliases": ["ZhangDingTian"],
+    "variants": ["Character/ZhangDingTian"],
+    "note": ""
+  },
+  "白雪": {
+    "default": "Character/BaiXue",
+    "aliases": ["BaiXue"],
+    "variants": ["Character/BaiXue", "Character/BaiXue_ShouShangBan"],
+    "note": "受伤版本须指定 BaiXue_ShouShangBan。"
+  },
+  "厄德": {
+    "default": "Character/EDe",
+    "aliases": ["EDe"],
+    "variants": ["Character/EDe"],
+    "note": ""
+  },
+  "海迪安": {
+    "default": "Character/HaiDiAn",
+    "aliases": ["HaiDiAn"],
+    "variants": ["Character/HaiDiAn"],
+    "note": ""
+  },
+  "冯院长": {
+    "default": "Character/YuanZhang_KeJiYuan",
+    "aliases": ["院长", "科技院院长", "YuanZhang_KeJiYuan"],
+    "variants": ["Character/YuanZhang_KeJiYuan"],
+    "note": ""
+  },
+  "隐": {
+    "default": "Character/Yin",
+    "aliases": ["Yin", "暗杀者隐"],
+    "variants": ["Character/Yin"],
+    "note": ""
+  },
+  "变异兽D": {
+    "default": "Character/BianYiShouD",
+    "aliases": ["BianYiShouD", "触手变异兽"],
+    "variants": ["Character/BianYiShouD", "Character/BianYiShouD_PoDong"],
+    "note": "破洞穿孔伤态用 BianYiShouD_PoDong。"
+  },
+  "前线阵地": {
+    "default": "Scence/QianXianZhenDi",
+    "aliases": ["QianXianZhenDi", "前线峡谷阵地"],
+    "variants": ["Scence/QianXianZhenDi"],
+    "note": ""
+  },
+  "破损楼房废墟内": {
+    "default": "Scence/LouFangFeiXuNei_PoSun",
+    "aliases": ["LouFangFeiXuNei_PoSun", "废墟大厅", "废墟楼内"],
+    "variants": ["Scence/LouFangFeiXuNei_PoSun"],
+    "note": ""
+  },
+  "火晶矿处": {
+    "default": "Scence/HuoJingKuangChu",
+    "aliases": ["HuoJingKuangChu", "火晶矿洞", "火晶矿"],
+    "variants": ["Scence/HuoJingKuangChu"],
+    "note": ""
+  },
+  "科技院实验室": {
+    "default": "Scence/KeJiYuan_ShiYanShi",
+    "aliases": ["KeJiYuan_ShiYanShi", "完好实验室"],
+    "variants": [
+      "Scence/KeJiYuan_ShiYanShi",
+      "Scence/JingCheng_KeJiYuanNei_ZhaHui",
+      "Scence/KeJiYuan_ShiYanShi_PoSun"
+    ],
+    "note": "区分完好(KeJiYuan_ShiYanShi)、炸毁黑夜(JingCheng_KeJiYuanNei_ZhaHui)与日景破损废墟(KeJiYuan_ShiYanShi_PoSun)。"
+  },
+  "炸毁科技院": {
+    "default": "Scence/JingCheng_KeJiYuanNei_ZhaHui",
+    "aliases": ["JingCheng_KeJiYuanNei_ZhaHui", "炸毁机房"],
+    "variants": ["Scence/JingCheng_KeJiYuanNei_ZhaHui"],
+    "note": ""
+  },
+  "科技院破损废墟": {
+    "default": "Scence/KeJiYuan_ShiYanShi_PoSun",
+    "aliases": ["KeJiYuan_ShiYanShi_PoSun", "日景科技院废墟"],
+    "variants": ["Scence/KeJiYuan_ShiYanShi_PoSun"],
+    "note": ""
+  },
+  "平民区旧房间": {
+    "default": "Scence/PingMinQuJiuFangJian_Nei",
+    "aliases": ["PingMinQuJiuFangJian_Nei", "旧房间内"],
+    "variants": ["Scence/PingMinQuJiuFangJian_Nei"],
+    "note": ""
+  },
+  "火焰晶体": {
+    "default": "Pro/HuoYanJingTi",
+    "aliases": ["火晶", "HuoYanJingTi"],
+    "variants": ["Pro/HuoYanJingTi"],
+    "note": ""
+  },
+  "蝴蝶刀": {
+    "default": "Pro/HuDieDao_Yin",
+    "aliases": ["HuDieDao_Yin", "隐蝴蝶刀"],
+    "variants": ["Pro/HuDieDao_Yin"],
+    "note": ""
+  },
+  "章顶天长刀": {
+    "default": "Pro/ZhangDao_ZhangDingTian",
+    "aliases": ["ZhangDao_ZhangDingTian", "长刀"],
+    "variants": ["Pro/ZhangDao_ZhangDingTian"],
+    "note": ""
+  },
+  "周山标识牌": {
+    "default": "Pro/BiaoShiPai_ZhouShan",
+    "aliases": ["BiaoShiPai_ZhouShan", "狗牌", "标识牌"],
+    "variants": ["Pro/BiaoShiPai_ZhouShan"],
+    "note": ""
+  },
+  "陆隐终版特效锚点": {
+    "default": "VFX/LuYin_MasterV3",
+    "aliases": ["LuYin_MasterV3", "陆隐主基准V3"],
+    "variants": ["VFX/LuYin_MasterV3", "VFX/JiNengTiXian_LuYin", "VFX/TianXingGong"],
+    "note": "含 pure_crop（近景防串姿态）与 texture_tile（暗黑蚀月+蓝丝纹理瓦片）。"
+  },
+  "天星功": {
+    "default": "VFX/TianXingGong",
+    "aliases": ["TianXingGong", "天星掌月球"],
+    "variants": ["VFX/TianXingGong", "VFX/LuYin_MasterV3"],
+    "note": ""
+  },
+  "陆隐技能体现": {
+    "default": "VFX/JiNengTiXian_LuYin",
+    "aliases": ["JiNengTiXian_LuYin", "波动掌", "星光球"],
+    "variants": ["VFX/JiNengTiXian_LuYin", "VFX/LuYin_MasterV3"],
+    "note": ""
+  },
+  "暴风斩": {
+    "default": "VFX/BaoFengZhan",
+    "aliases": ["BaoFengZhan"],
+    "variants": ["VFX/BaoFengZhan"],
+    "note": ""
+  },
+  "炎火掌": {
+    "default": "VFX/YanHuoZhang",
+    "aliases": ["YanHuoZhang", "黑炎火掌"],
+    "variants": ["VFX/YanHuoZhang"],
+    "note": ""
+  },
+  "特蕾斯技能": {
+    "default": "VFX/JiNengTiXian_TeLeiSi",
+    "aliases": ["JiNengTiXian_TeLeiSi"],
+    "variants": ["VFX/JiNengTiXian_TeLeiSi"],
+    "note": ""
+  },
+  "寒冰天赋": {
+    "default": "VFX/HanBingTianFu",
+    "aliases": ["HanBingTianFu", "白雪寒冰"],
+    "variants": ["VFX/HanBingTianFu"],
+    "note": ""
+  },
+  "厄德水涡": {
+    "default": "VFX/JiNengTiXian_EDe",
+    "aliases": ["JiNengTiXian_EDe"],
+    "variants": ["VFX/JiNengTiXian_EDe"],
+    "note": ""
+  }
+}

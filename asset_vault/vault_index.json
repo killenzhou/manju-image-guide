@@ -1,0 +1,1923 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-24T17:19:10+08:00",
+  "assets": {
+    "Character/LuYin_Xin": {
+      "asset_id": "Character/LuYin_Xin",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\LuYin_Xin\\front.png",
+          "rel_file": "library/Character/LuYin_Xin/front.png",
+          "tier": "shading",
+          "source_rel": "Character/LuYin_Xin/Shading/PNG/A.png",
+          "source_asset_id": "Character/LuYin_Xin",
+          "source_sha256": "06081bad11c932432f890f1089818ddce22fe98a082fa2530b60b59169feaf54",
+          "source_size_bytes": 4388807,
+          "source_mtime_ns": 1781252792000000000,
+          "known_shading_siblings": [
+            "Character/LuYin_Xin/Shadin/LuYin_Xin_CH_Shade.jpg",
+            "Character/LuYin_Xin/Shading/PNG/A.png",
+            "Character/LuYin_Xin/Shading/PNG/B.png",
+            "Character/LuYin_Xin/Shading/PNG/C.png",
+            "Character/LuYin_Xin/Shading/PNG/D.png",
+            "Character/LuYin_Xin/Shading/PNG/E.png",
+            "Character/LuYin_Xin/Shading/PNG/F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐新装正面全身A-pose（蓝色丹宁拼接夹克+长裤+长靴，无校色球）",
+          "dims": [
+            1281,
+            1800
+          ],
+          "sha256": "108f36051a8492c1dcf7136795d4c268d3350b92afb888f2c9c4b89dd3ac2806",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:22+08:00"
+        },
+        "back": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\LuYin_Xin\\back.png",
+          "rel_file": "library/Character/LuYin_Xin/back.png",
+          "tier": "shading",
+          "source_rel": "Character/LuYin_Xin/Shading/PNG/D.png",
+          "source_asset_id": "Character/LuYin_Xin",
+          "source_sha256": "87e8876b99090d831246db1ce014ac024ff87de630ca7d8d1918237dfd33ddeb",
+          "source_size_bytes": 4332860,
+          "source_mtime_ns": 1781252912000000000,
+          "known_shading_siblings": [
+            "Character/LuYin_Xin/Shadin/LuYin_Xin_CH_Shade.jpg",
+            "Character/LuYin_Xin/Shading/PNG/A.png",
+            "Character/LuYin_Xin/Shading/PNG/B.png",
+            "Character/LuYin_Xin/Shading/PNG/C.png",
+            "Character/LuYin_Xin/Shading/PNG/D.png",
+            "Character/LuYin_Xin/Shading/PNG/E.png",
+            "Character/LuYin_Xin/Shading/PNG/F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐新装背面全身A-pose（背部白色骷髅骨纹丹宁夹克+腰包细节，无校色球）",
+          "dims": [
+            1410,
+            1800
+          ],
+          "sha256": "4cff915d873f995f3219cd02a26fd37d3b2c59e28aa1974744dc160ebbc48041",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:23+08:00"
+        },
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\LuYin_Xin\\face.png",
+          "rel_file": "library/Character/LuYin_Xin/face.png",
+          "tier": "shading",
+          "source_rel": "Character/LuYin_Xin/Shading/PNG/E.png",
+          "source_asset_id": "Character/LuYin_Xin",
+          "source_sha256": "fd267486095acbca5502601cede30eb076cc196d372c4b226e70b94287b4e589",
+          "source_size_bytes": 24059735,
+          "source_mtime_ns": 1782791827000000000,
+          "known_shading_siblings": [
+            "Character/LuYin_Xin/Shadin/LuYin_Xin_CH_Shade.jpg",
+            "Character/LuYin_Xin/Shading/PNG/A.png",
+            "Character/LuYin_Xin/Shading/PNG/B.png",
+            "Character/LuYin_Xin/Shading/PNG/C.png",
+            "Character/LuYin_Xin/Shading/PNG/D.png",
+            "Character/LuYin_Xin/Shading/PNG/E.png",
+            "Character/LuYin_Xin/Shading/PNG/F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐正面面部与深蓝黑短碎发/冰蓝瞳孔特写",
+          "dims": [
+            1600,
+            1599
+          ],
+          "sha256": "b2e9784b99bf28c77b005fe8c425d5d6f45190d6ccd859c025dc75272b262546",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:24+08:00"
+        }
+      }
+    },
+    "Character/GeLanNi": {
+      "asset_id": "Character/GeLanNi",
+      "slots": {
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\GeLanNi\\face.png",
+          "rel_file": "library/Character/GeLanNi/face.png",
+          "tier": "shading",
+          "source_rel": "Character/GeLanNi/Shading/PNG/GeLanNi_CH_Face.jpg",
+          "source_asset_id": "Character/GeLanNi",
+          "source_sha256": "47a555f6946f27dc02cb5dd0e60988aa5efe1c799df92194c381238694fc24ed",
+          "source_size_bytes": 6116179,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [
+            "Character/GeLanNi/Shading/PNG/GeLanNi_CH_Face.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "格兰妮3/4侧正面精雕脸部Shading特写",
+          "dims": [
+            1579,
+            1600
+          ],
+          "sha256": "0badbd4f90001357463dfca6c98e369291d1b4f4e8e6df38ff89e3ce840dba55",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:24+08:00"
+        },
+        "front_ep3": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\GeLanNi\\front_ep3.png",
+          "rel_file": "library/Character/GeLanNi/front_ep3.png",
+          "tier": "design",
+          "source_rel": "Character/GeLanNi/Design/GeLanNi.jpg",
+          "source_asset_id": "Character/GeLanNi",
+          "source_sha256": "3701ef9eb659d9ac726b396e13e749bb019b791a466c5db462af06f6d5a4c450",
+          "source_size_bytes": 11629083,
+          "source_mtime_ns": 1781691325000000000,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "格兰妮EP003白灰紧身战服正面全身设计图（已固定Design，避免误切）",
+          "dims": [
+            779,
+            1800
+          ],
+          "sha256": "86d259212dd4eb823ffb90ff7e5b6c87e197d5f88e47b5e7b7085ec15ee2487b",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:25+08:00"
+        },
+        "front_ep5": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\GeLanNi\\front_ep5.png",
+          "rel_file": "library/Character/GeLanNi/front_ep5.png",
+          "tier": "design",
+          "source_rel": "Character/GeLanNi/Design/GeLanNi_CH.jpg",
+          "source_asset_id": "Character/GeLanNi",
+          "source_sha256": "b0e1ed76f45e715fc128c6691e7d7d0c7c30fa0facdbe281e9274ac17fceb561",
+          "source_size_bytes": 2733834,
+          "source_mtime_ns": 1793188441484797600,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "格兰妮EP005无伤包洁净正面全身设计图",
+          "dims": [
+            712,
+            1470
+          ],
+          "sha256": "fe48abd514c4573cfd8be5131fbe36e31618ba6e953c9f7edc7677c990f69167",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:25+08:00"
+        }
+      }
+    },
+    "Character/ZhouShan": {
+      "asset_id": "Character/ZhouShan",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhouShan\\front.png",
+          "rel_file": "library/Character/ZhouShan/front.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhouShan/Shading/PNG/ZhouShan (1).png",
+          "source_asset_id": "Character/ZhouShan",
+          "source_sha256": "93453e27ad73f4fcc2890059368d853e3d9facedfeace814ab38729e57faf684",
+          "source_size_bytes": 17614073,
+          "source_mtime_ns": 1794812903000000000,
+          "known_shading_siblings": [
+            "Character/ZhouShan/Shading/PNG/ZhouShan (1).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (2).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (3).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (4).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (5).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (6).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_A.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_B.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_C.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_D.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_E.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_F.png",
+            "Character/ZhouShan/Shading/ZhouShan_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "周山军绿重甲正面全身Shading",
+          "dims": [
+            1484,
+            1800
+          ],
+          "sha256": "f6a250d0c52f00277348063ae3fb9af416fb466483b9f14b910c3fdca3582f83",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:26+08:00"
+        },
+        "back": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhouShan\\back.png",
+          "rel_file": "library/Character/ZhouShan/back.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhouShan/Shading/PNG/ZhouShan (4).png",
+          "source_asset_id": "Character/ZhouShan",
+          "source_sha256": "91edbe8344c3f76f64e005bc19eb84ac3aa437202870316112c46a89457c54c4",
+          "source_size_bytes": 17277061,
+          "source_mtime_ns": 1794813464000000000,
+          "known_shading_siblings": [
+            "Character/ZhouShan/Shading/PNG/ZhouShan (1).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (2).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (3).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (4).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (5).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (6).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_A.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_B.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_C.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_D.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_E.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_F.png",
+            "Character/ZhouShan/Shading/ZhouShan_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "周山军绿重甲背面全身Shading",
+          "dims": [
+            1484,
+            1800
+          ],
+          "sha256": "12105a7206e4d63fc19789a68e3ec376ad751bf1a6d708d26db68b7fdeacb2c6",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:26+08:00"
+        },
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhouShan\\face.png",
+          "rel_file": "library/Character/ZhouShan/face.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhouShan/Shading/PNG/ZhouShan (6).png",
+          "source_asset_id": "Character/ZhouShan",
+          "source_sha256": "f4767ab82151fcbf193465f2200a4d3803d5ab9e496d20d540743b525f2a7a7a",
+          "source_size_bytes": 22781098,
+          "source_mtime_ns": 1794921518000000000,
+          "known_shading_siblings": [
+            "Character/ZhouShan/Shading/PNG/ZhouShan (1).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (2).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (3).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (4).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (5).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan (6).png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_A.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_B.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_C.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_D.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_E.png",
+            "Character/ZhouShan/Shading/PNG/ZhouShan_F.png",
+            "Character/ZhouShan/Shading/ZhouShan_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "周山3/4面部与肩甲Shading特写",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "c23111d831fd6685d05d4fb60154179df125195dd330851946f67b897ce76f69",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:27+08:00"
+        },
+        "axe": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhouShan\\axe.png",
+          "rel_file": "library/Character/ZhouShan/axe.png",
+          "tier": "design",
+          "source_rel": "Character/ZhouShan/Design/ZhouShanFu.jpg",
+          "source_asset_id": "Character/ZhouShan",
+          "source_sha256": "ec906366f72924030e14c4f8d6ba544a1700227862f128dddc2e305f98583696",
+          "source_size_bytes": 2923215,
+          "source_mtime_ns": 1793188492890784700,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "周山重型战斧正面设计图",
+          "dims": [
+            573,
+            1504
+          ],
+          "sha256": "310883b7f8e5b7b21319c2ddf0ef858b8028b1a63e4f0b1572d0b9e79d6ee641",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:27+08:00"
+        }
+      }
+    },
+    "Character/TeLeiSi": {
+      "asset_id": "Character/TeLeiSi",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\TeLeiSi\\front.png",
+          "rel_file": "library/Character/TeLeiSi/front.png",
+          "tier": "shading",
+          "source_rel": "Character/TeLeiSi/Shading/PNG/TeLeiSi (1).png",
+          "source_asset_id": "Character/TeLeiSi",
+          "source_sha256": "30853e7176f4e78e12cd90ea188a238ca4237de8ae907d4c38c13b04051bd0f6",
+          "source_size_bytes": 15917875,
+          "source_mtime_ns": 1783330095000000000,
+          "known_shading_siblings": [
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (6).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (6).png",
+            "Character/TeLeiSi/Shading/TeLeiSi_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "特蕾斯银白战甲披巾正面全身Shading",
+          "dims": [
+            1521,
+            1800
+          ],
+          "sha256": "9f2d6cfba6bb4e0c298106f5b84f2c26b92033cd400ecbe52c7e48c55a468f45",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:28+08:00"
+        },
+        "back": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\TeLeiSi\\back.png",
+          "rel_file": "library/Character/TeLeiSi/back.png",
+          "tier": "shading",
+          "source_rel": "Character/TeLeiSi/Shading/PNG/TeLeiSi (4).png",
+          "source_asset_id": "Character/TeLeiSi",
+          "source_sha256": "6fc70d80a0c807ffc1f0f1221b7bb180211bfa2bc6b8e7159caa6b74cc4799f4",
+          "source_size_bytes": 16127434,
+          "source_mtime_ns": 1783328735000000000,
+          "known_shading_siblings": [
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (6).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (6).png",
+            "Character/TeLeiSi/Shading/TeLeiSi_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "特蕾斯银白战甲披巾背面全身Shading",
+          "dims": [
+            1521,
+            1800
+          ],
+          "sha256": "4517470cc62e275561ce0a1ea54873e87a21a0ed46a43ba6712c36608cac78c1",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:29+08:00"
+        },
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\TeLeiSi\\face.png",
+          "rel_file": "library/Character/TeLeiSi/face.png",
+          "tier": "shading",
+          "source_rel": "Character/TeLeiSi/Shading/PNG/TeLeiSi (6).png",
+          "source_asset_id": "Character/TeLeiSi",
+          "source_sha256": "6ffc76ce8e263c5d42ea09e04ca826767c36b2fbe88f67f46c875738921e9d35",
+          "source_size_bytes": 21469080,
+          "source_mtime_ns": 1783330283000000000,
+          "known_shading_siblings": [
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi (6).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (1).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (2).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (3).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (4).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (5).png",
+            "Character/TeLeiSi/Shading/PNG/TeLeiSi_Tou (6).png",
+            "Character/TeLeiSi/Shading/TeLeiSi_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "特蕾斯3/4冷艳面部Shading特写",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "0c1a9b3d10152371939b322a1823ba463b2c2ca296acb3b272051f1af81c8cce",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:29+08:00"
+        }
+      }
+    },
+    "Character/AoDun": {
+      "asset_id": "Character/AoDun",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\AoDun\\front.png",
+          "rel_file": "library/Character/AoDun/front.png",
+          "tier": "shading",
+          "source_rel": "Character/AoDun/Shading/PNG/AoDun_A.png",
+          "source_asset_id": "Character/AoDun",
+          "source_sha256": "0d1f710f2309073e9f6a87e5ea2fd408e8da51bdc81c2e14188c554c7c2e07d2",
+          "source_size_bytes": 8572440,
+          "source_mtime_ns": 1793687487000000000,
+          "known_shading_siblings": [
+            "Character/AoDun/Shading/AoDun_CH_Shade.jpg",
+            "Character/AoDun/Shading/PNG/AoDun_A.png",
+            "Character/AoDun/Shading/PNG/AoDun_B.png",
+            "Character/AoDun/Shading/PNG/AoDun_C.png",
+            "Character/AoDun/Shading/PNG/AoDun_D.png",
+            "Character/AoDun/Shading/PNG/AoDun_E.png",
+            "Character/AoDun/Shading/PNG/AoDun_F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "奥顿黑红甲正面全身Shading",
+          "dims": [
+            1485,
+            1800
+          ],
+          "sha256": "88e78ec0bfe97a47ad77410fc8c138745ef096fda7fc675223247499c013aae1",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:30+08:00"
+        },
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\AoDun\\face.png",
+          "rel_file": "library/Character/AoDun/face.png",
+          "tier": "shading",
+          "source_rel": "Character/AoDun/Shading/PNG/AoDun_F.png",
+          "source_asset_id": "Character/AoDun",
+          "source_sha256": "89ee3c8d6c43e30ab0fcde4768e077aeac91b20b41c2b67d11ba0ec16235d25c",
+          "source_size_bytes": 11543163,
+          "source_mtime_ns": 1793688337000000000,
+          "known_shading_siblings": [
+            "Character/AoDun/Shading/AoDun_CH_Shade.jpg",
+            "Character/AoDun/Shading/PNG/AoDun_A.png",
+            "Character/AoDun/Shading/PNG/AoDun_B.png",
+            "Character/AoDun/Shading/PNG/AoDun_C.png",
+            "Character/AoDun/Shading/PNG/AoDun_D.png",
+            "Character/AoDun/Shading/PNG/AoDun_E.png",
+            "Character/AoDun/Shading/PNG/AoDun_F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "奥顿3/4红发异色肤质面部Shading特写",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "8808c23d4902f1a9c91a4b5b1c2a3fff539c4e6eddb7e961980a8b137fe99ab7",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:31+08:00"
+        },
+        "sword": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\AoDun\\sword.png",
+          "rel_file": "library/Character/AoDun/sword.png",
+          "tier": "shading",
+          "source_rel": "Character/AoDun/Shading/AoDun_CH_Shade.jpg",
+          "source_asset_id": "Character/AoDun",
+          "source_sha256": "a486ece88c44e6843660d6f7a2b01896031f176d46bfc3f17f50a9ba96046afa",
+          "source_size_bytes": 19726696,
+          "source_mtime_ns": 1793693351000000000,
+          "known_shading_siblings": [
+            "Character/AoDun/Shading/AoDun_CH_Shade.jpg",
+            "Character/AoDun/Shading/PNG/AoDun_A.png",
+            "Character/AoDun/Shading/PNG/AoDun_B.png",
+            "Character/AoDun/Shading/PNG/AoDun_C.png",
+            "Character/AoDun/Shading/PNG/AoDun_D.png",
+            "Character/AoDun/Shading/PNG/AoDun_E.png",
+            "Character/AoDun/Shading/PNG/AoDun_F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "奥顿持红色大剑立姿单格Shading",
+          "dims": [
+            761,
+            1600
+          ],
+          "sha256": "b53b4501a5c7f77638117a768ad581d072dd872093ea94323c0eadc1c80da25f",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:31+08:00"
+        }
+      }
+    },
+    "Character/ChangFaSangShi": {
+      "asset_id": "Character/ChangFaSangShi",
+      "slots": {
+        "body": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ChangFaSangShi\\body.png",
+          "rel_file": "library/Character/ChangFaSangShi/body.png",
+          "tier": "shading",
+          "source_rel": "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_02.jpeg",
+          "source_asset_id": "Character/ChangFaSangShi",
+          "source_sha256": "e06f169dae92260ae71ab3c26241f828b1b7487dcf565a1d938c20e5fe11b342",
+          "source_size_bytes": 4830433,
+          "source_mtime_ns": 1788846465000000000,
+          "known_shading_siblings": [
+            "Character/ChangFaSangShi/Shading/ChangFaSangShi_CH_Shade.jpg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_01.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_02.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_03.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_04.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_05.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_06.jpeg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "长发蜘蛛型尸王3/4全身甲壳节肢Shading",
+          "dims": [
+            1450,
+            1600
+          ],
+          "sha256": "b91ef4a39264326368330fa4e37ebdf6b80821fd930acdc74261f578df369fb9",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:32+08:00"
+        },
+        "head": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ChangFaSangShi\\head.png",
+          "rel_file": "library/Character/ChangFaSangShi/head.png",
+          "tier": "shading",
+          "source_rel": "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_06.jpeg",
+          "source_asset_id": "Character/ChangFaSangShi",
+          "source_sha256": "250a8e11cc0c22fda87c226373abf0bfd784f0ae5980014ca4aef1124c4abf4d",
+          "source_size_bytes": 7111577,
+          "source_mtime_ns": 1788846469000000000,
+          "known_shading_siblings": [
+            "Character/ChangFaSangShi/Shading/ChangFaSangShi_CH_Shade.jpg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_01.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_02.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_03.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_04.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_05.jpeg",
+            "Character/ChangFaSangShi/Shading/PNG/ChangFaSangShi_ScreenShot_06.jpeg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "长发蜘蛛型尸王猩红复眼头部Shading特写",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "95d2fca70add2f8cb9479385354409d8c02a2b4ca0f22fdbf6cd03f51b89bb11",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:32+08:00"
+        }
+      }
+    },
+    "Character/ZhangDingTian": {
+      "asset_id": "Character/ZhangDingTian",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhangDingTian\\front.png",
+          "rel_file": "library/Character/ZhangDingTian/front.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg",
+          "source_asset_id": "Character/ZhangDingTian",
+          "source_sha256": "eb4973a3e0f1da5441ba92079eb261589c00276c6368a5481e68f7f183ba74ac",
+          "source_size_bytes": 24212114,
+          "source_mtime_ns": 1793613594000000000,
+          "known_shading_siblings": [
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0000.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0001.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0002.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0003.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0004.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0005.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0006.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0007.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0008.png",
+            "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "章顶天正面全身Shading",
+          "dims": [
+            1240,
+            1800
+          ],
+          "sha256": "e03e431d9d99bd88f7b6be6667a9031a1a82dccbebbd125976576344d9df1c86",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:33+08:00"
+        },
+        "back": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhangDingTian\\back.png",
+          "rel_file": "library/Character/ZhangDingTian/back.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg",
+          "source_asset_id": "Character/ZhangDingTian",
+          "source_sha256": "eb4973a3e0f1da5441ba92079eb261589c00276c6368a5481e68f7f183ba74ac",
+          "source_size_bytes": 24212114,
+          "source_mtime_ns": 1793613594000000000,
+          "known_shading_siblings": [
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0000.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0001.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0002.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0003.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0004.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0005.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0006.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0007.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0008.png",
+            "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "章顶天背面全身Shading",
+          "dims": [
+            1302,
+            1800
+          ],
+          "sha256": "d3936ed4a96f4f151fdf902165c7b510dd19eb92b23c6874ad0c236296538c57",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:34+08:00"
+        },
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ZhangDingTian\\face.png",
+          "rel_file": "library/Character/ZhangDingTian/face.png",
+          "tier": "shading",
+          "source_rel": "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg",
+          "source_asset_id": "Character/ZhangDingTian",
+          "source_sha256": "eb4973a3e0f1da5441ba92079eb261589c00276c6368a5481e68f7f183ba74ac",
+          "source_size_bytes": 24212114,
+          "source_mtime_ns": 1793613594000000000,
+          "known_shading_siblings": [
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0000.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0001.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0002.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0003.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0004.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0005.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0006.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0007.png",
+            "Character/ZhangDingTian/Shading/PNG/ZhangDingTian_map.0008.png",
+            "Character/ZhangDingTian/Shading/ZhangDingTian_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "章顶天面部Shading特写",
+          "dims": [
+            1544,
+            1600
+          ],
+          "sha256": "a70d154b273e285bcbdc740f38ef61973bce3c4b7f23c2bc5d3d3ce760a9d4d4",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:34+08:00"
+        }
+      }
+    },
+    "Character/BaiXue": {
+      "asset_id": "Character/BaiXue",
+      "slots": {
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\BaiXue\\face.png",
+          "rel_file": "library/Character/BaiXue/face.png",
+          "tier": "shading",
+          "source_rel": "Character/BaiXue/Shading/PNG/BaiXue_CH_Face.jpg",
+          "source_asset_id": "Character/BaiXue",
+          "source_sha256": "b838c54c54eb36c206f1c85383c933904041d4ac89634c90320c72ad4b94d10a",
+          "source_size_bytes": 8596815,
+          "source_mtime_ns": 1786526377000000000,
+          "known_shading_siblings": [
+            "Character/BaiXue/Shading/PNG/BaiXue_CH_Face.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "白雪正面面部Shading特写",
+          "dims": [
+            1429,
+            1600
+          ],
+          "sha256": "489270cfa34c47537488c781b570c2df13834b77f12d32a08760c31f7589ec65",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:43:08+08:00"
+        },
+        "front_sword": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\BaiXue\\front_sword.png",
+          "rel_file": "library/Character/BaiXue/front_sword.png",
+          "tier": "design",
+          "source_rel": "Pro/ChangJian_BaiXue/Design/ChangJian_BaiXue_Pro.jpg",
+          "source_asset_id": "Pro/ChangJian_BaiXue",
+          "source_sha256": "7d5797acfc98ce93a606e1a5c9f7369a1a9c5c8b5b7a70fa51b62fd9e6eadc0c",
+          "source_size_bytes": 7683468,
+          "source_mtime_ns": 1785924267000000000,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "白雪持冰剑全身正面设计图",
+          "dims": [
+            1170,
+            1679
+          ],
+          "sha256": "ea74d2558ba7f9b111217ec9332ec9f818d7034aaadedaa3efcfc11ccc03b300",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:43:09+08:00"
+        }
+      }
+    },
+    "Character/EDe": {
+      "asset_id": "Character/EDe",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\EDe\\front.png",
+          "rel_file": "library/Character/EDe/front.png",
+          "tier": "design",
+          "source_rel": "Character/EDe/Design/EDe_CH.jpg",
+          "source_asset_id": "Character/EDe",
+          "source_sha256": "c4c26232498899aa28421cbbf576143e74f8ddd9b9365ae4ff7d943142aad046",
+          "source_size_bytes": 2915822,
+          "source_mtime_ns": 1793188495316745700,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "厄德（含机械触手）正面全身设计图",
+          "dims": [
+            1408,
+            1698
+          ],
+          "sha256": "2fa3fd91b166aa409d7ffc8ad246971fc5364c4c6f070744cbc8b778383e848b",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:36+08:00"
+        }
+      }
+    },
+    "Character/HaiDiAn": {
+      "asset_id": "Character/HaiDiAn",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\HaiDiAn\\front.png",
+          "rel_file": "library/Character/HaiDiAn/front.png",
+          "tier": "shading",
+          "source_rel": "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_01.jpeg",
+          "source_asset_id": "Character/HaiDiAn",
+          "source_sha256": "2feaef7e72debaf6a1fdadc3f808fe3ac20d6ed01d86cc61be2093be8921f4f7",
+          "source_size_bytes": 4130520,
+          "source_mtime_ns": 1791596600000000000,
+          "known_shading_siblings": [
+            "Character/HaiDiAn/Shading/HaiDiAn_CH_Shade.png",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_01.jpeg",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_02.jpeg",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_03.jpeg",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_04.jpeg",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_05.jpeg",
+            "Character/HaiDiAn/Shading/PNG/HaiDiAn_ScreenShot_06.jpeg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "海迪安正面全身Shading",
+          "dims": [
+            1575,
+            1800
+          ],
+          "sha256": "d2cfe47872bcb20598a12dbef29c6d5e94834c86417c32f401d493655b7cc84f",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:37+08:00"
+        }
+      }
+    },
+    "Character/YuanZhang_KeJiYuan": {
+      "asset_id": "Character/YuanZhang_KeJiYuan",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\YuanZhang_KeJiYuan\\front.png",
+          "rel_file": "library/Character/YuanZhang_KeJiYuan/front.png",
+          "tier": "design",
+          "source_rel": "Character/YuanZhang_KeJiYuan/Design/YuanZhang_KeJiYuan_CH.jpg",
+          "source_asset_id": "Character/YuanZhang_KeJiYuan",
+          "source_sha256": "5b3294d4ddbc1d3d6ddedfdef39465be53ef9aa8709c9e116112406d26b55d39",
+          "source_size_bytes": 2191832,
+          "source_mtime_ns": 1793188471527416000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "科技院冯院长拄杖正面全身设计图",
+          "dims": [
+            803,
+            1317
+          ],
+          "sha256": "642dbb1adcd2b62adf3e5eb33475b25e054696ca8e7c4579640031d9bd52a061",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:37+08:00"
+        }
+      }
+    },
+    "Character/Yin": {
+      "asset_id": "Character/Yin",
+      "slots": {
+        "face": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\Yin\\face.png",
+          "rel_file": "library/Character/Yin/face.png",
+          "tier": "shading",
+          "source_rel": "Character/Yin/Shading/PNG/Yin_CH_Shade.jpg",
+          "source_asset_id": "Character/Yin",
+          "source_sha256": "a78c814a51bc0c4ee5d70e256f0163fd728bfd3993b8545df6a3f4739fd79965",
+          "source_size_bytes": 7623577,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [
+            "Character/Yin/Shading/PNG/Yin_CH_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "隐3/4面部Shading特写",
+          "dims": [
+            1551,
+            1600
+          ],
+          "sha256": "094e3ccbaa516795dd7bca72b9159ba543f5df337a1f030b1f5bf6dd7952f6d5",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:38+08:00"
+        }
+      }
+    },
+    "Character/BianYiShouD": {
+      "asset_id": "Character/BianYiShouD",
+      "slots": {
+        "body": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\BianYiShouD\\body.png",
+          "rel_file": "library/Character/BianYiShouD/body.png",
+          "tier": "shading",
+          "source_rel": "Character/BianYiShouD/Shading/PNG/BianYiShouD.0001.jpeg",
+          "source_asset_id": "Character/BianYiShouD",
+          "source_sha256": "7a534bd1ebf339587705cf3aa7f1194b9e9d67e08cf8d91240bf1ece945141e6",
+          "source_size_bytes": 22604318,
+          "source_mtime_ns": 1794991692000000000,
+          "known_shading_siblings": [
+            "Character/BianYiShouD/Shading/BianYiShouD_CH_Shade.jpg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0000.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0001.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0002.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0003.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0004.jpeg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "触手辐射状变异兽D 3/4全身Shading",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "2377d3b804eef1e6fc92f7e2dc8cbb61a848a104a6a61bd5c3f3ab5f2a159271",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:39+08:00"
+        },
+        "maw": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\BianYiShouD\\maw.png",
+          "rel_file": "library/Character/BianYiShouD/maw.png",
+          "tier": "shading",
+          "source_rel": "Character/BianYiShouD/Shading/PNG/BianYiShouD.0004.jpeg",
+          "source_asset_id": "Character/BianYiShouD",
+          "source_sha256": "d59c18d286e6401ec406c8b217c72343f12f6539bf8b572cbcf32bfb08dbdba9",
+          "source_size_bytes": 43508545,
+          "source_mtime_ns": 1794991838000000000,
+          "known_shading_siblings": [
+            "Character/BianYiShouD/Shading/BianYiShouD_CH_Shade.jpg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0000.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0001.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0002.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0003.jpeg",
+            "Character/BianYiShouD/Shading/PNG/BianYiShouD.0004.jpeg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "变异兽D张开利齿巨口Shading特写",
+          "dims": [
+            1600,
+            1600
+          ],
+          "sha256": "d7734dbb71be1f238d0e268b77c777778739563ba9b94c9216e927022c837231",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:41+08:00"
+        }
+      }
+    },
+    "Character/BianYiShouD_PoDong": {
+      "asset_id": "Character/BianYiShouD_PoDong",
+      "slots": {
+        "body": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\BianYiShouD_PoDong\\body.png",
+          "rel_file": "library/Character/BianYiShouD_PoDong/body.png",
+          "tier": "design",
+          "source_rel": "Character/BianYiShouD_PoDong/Design/BianYiShouD_PoDong_CH.jpg",
+          "source_asset_id": "Character/BianYiShouD_PoDong",
+          "source_sha256": "b4da813259b5d23702952e28784bde7b86b5176a4656a0e22b6e0eed20b34da5",
+          "source_size_bytes": 2526618,
+          "source_mtime_ns": 1793188434408135100,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "变异兽D穿孔破洞伤态设计图",
+          "dims": [
+            991,
+            1197
+          ],
+          "sha256": "70baa0894638c188bbe513b93e2d808e1b44ee20044f0b807ba1f0a0d42ea377",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:42+08:00"
+        }
+      }
+    },
+    "Scence/QianXianZhenDi": {
+      "asset_id": "Scence/QianXianZhenDi",
+      "slots": {
+        "gorge": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\QianXianZhenDi\\gorge.png",
+          "rel_file": "library/Scence/QianXianZhenDi/gorge.png",
+          "tier": "shading",
+          "source_rel": "Scence/QianXianZhenDi/Shading/QianXianZhenDi_BG_Shade.jpg",
+          "source_asset_id": "Scence/QianXianZhenDi",
+          "source_sha256": "7758f6a9094ff26a02a055a4cd9a7f7b172a08396298877d655be3f06d22468e",
+          "source_size_bytes": 2058481,
+          "source_mtime_ns": 1793188567602000100,
+          "known_shading_siblings": [
+            "Scence/QianXianZhenDi/Shading/QianXianZhenDi_BG_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "前线阵地峡谷壁垒远眺全景视角（Shading单格）",
+          "dims": [
+            1855,
+            774
+          ],
+          "sha256": "eac2c80f246208aeaa504dea972d7371d29d25ef0980fb853ff009f90ec67f49",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:42+08:00"
+        }
+      }
+    },
+    "Scence/LouFangFeiXuNei_PoSun": {
+      "asset_id": "Scence/LouFangFeiXuNei_PoSun",
+      "slots": {
+        "inside": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\LouFangFeiXuNei_PoSun\\inside.png",
+          "rel_file": "library/Scence/LouFangFeiXuNei_PoSun/inside.png",
+          "tier": "shading",
+          "source_rel": "Scence/LouFangFeiXuNei_PoSun/Shading/PNG/LouFangFeiXuNei_PoSun_BG_Shade1.png",
+          "source_asset_id": "Scence/LouFangFeiXuNei_PoSun",
+          "source_sha256": "fb557e894b74b164b0f4b35b62282e176d7b394b141bced6b7cef1b225a14579",
+          "source_size_bytes": 4057188,
+          "source_mtime_ns": 1786702463000000000,
+          "known_shading_siblings": [
+            "Scence/LouFangFeiXuNei_PoSun/Shading/LouFangFeiXuNei_PoSun_BG_Shade.jpg",
+            "Scence/LouFangFeiXuNei_PoSun/Shading/PNG/LouFangFeiXuNei_PoSun_BG_Shade1.png",
+            "Scence/LouFangFeiXuNei_PoSun/Shading/PNG/LouFangFeiXuNei_PoSun_BG_Shade2.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "破损楼房废墟内部大厅环境Shading（水泥立柱与坍塌顶板）",
+          "dims": [
+            1920,
+            1008
+          ],
+          "sha256": "a063337ad3ce52489c20f570f1e395dcf9aa52701a0319021a15e35b16cdb363",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:42+08:00"
+        }
+      }
+    },
+    "Scence/HuoJingKuangChu": {
+      "asset_id": "Scence/HuoJingKuangChu",
+      "slots": {
+        "shade_main": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\HuoJingKuangChu\\shade_main.png",
+          "rel_file": "library/Scence/HuoJingKuangChu/shade_main.png",
+          "tier": "shading",
+          "source_rel": "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade1.png",
+          "source_asset_id": "Scence/HuoJingKuangChu",
+          "source_sha256": "7f29b74c42a147a8cbf6c7c1c54038995921046a560aa5b26e6d65d8f2ba7913",
+          "source_size_bytes": 2508674,
+          "source_mtime_ns": 1787643044000000000,
+          "known_shading_siblings": [
+            "Scence/HuoJingKuangChu/Shading/HuoJingKuangChu_BG_Shade.jpg",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade1.png",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade2.png",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade3.png",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade4.png",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade5.png",
+            "Scence/HuoJingKuangChu/Shading/PNG/HuoJingKuangChu_BG_Shade6.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "火晶矿处矿道岩壁Shading主视角",
+          "dims": [
+            1920,
+            1008
+          ],
+          "sha256": "bc61626e3e4f67537414d9247281950bf252b9a3c266be93344da16c452940cf",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:43+08:00"
+        }
+      }
+    },
+    "Scence/KeJiYuan_ShiYanShi": {
+      "asset_id": "Scence/KeJiYuan_ShiYanShi",
+      "slots": {
+        "intact": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\KeJiYuan_ShiYanShi\\intact.png",
+          "rel_file": "library/Scence/KeJiYuan_ShiYanShi/intact.png",
+          "tier": "shading",
+          "source_rel": "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade5.png",
+          "source_asset_id": "Scence/KeJiYuan_ShiYanShi",
+          "source_sha256": "b892d7c632d50cecfea29fbe4ccffc6ea49e8b8d533561baf4b765310e5ca664",
+          "source_size_bytes": 3340375,
+          "source_mtime_ns": 1787564889000000000,
+          "known_shading_siblings": [
+            "Scence/KeJiYuan_ShiYanShi/Shading/KeJiYuan_ShiYanShi_BG_Shade.jpg",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade1.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade10.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade2.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade3.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade4.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade5.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade6.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade7.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade8.png",
+            "Scence/KeJiYuan_ShiYanShi/Shading/PNG/KeJiYuan_ShiYanShi_BG_Shade9.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "科技院地下机房/实验室完好态室内全景Shading",
+          "dims": [
+            1920,
+            1008
+          ],
+          "sha256": "3b15aa77cfab9b822f5530cc0160a9a16ed07b66dbb8f4e024325aae9adb1758",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:43+08:00"
+        }
+      }
+    },
+    "Scence/JingCheng_KeJiYuanNei_ZhaHui": {
+      "asset_id": "Scence/JingCheng_KeJiYuanNei_ZhaHui",
+      "slots": {
+        "destroyed": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\JingCheng_KeJiYuanNei_ZhaHui\\destroyed.png",
+          "rel_file": "library/Scence/JingCheng_KeJiYuanNei_ZhaHui/destroyed.png",
+          "tier": "shading",
+          "source_rel": "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00000.png",
+          "source_asset_id": "Scence/JingCheng_KeJiYuanNei_ZhaHui",
+          "source_sha256": "67873eb8e72a80e8b9f4e39abe48952c3c68550c7587bc9d782f1b20d3823b9d",
+          "source_size_bytes": 2571852,
+          "source_mtime_ns": 1792058461000000000,
+          "known_shading_siblings": [
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/JingCheng_KeJiYuanNei_ZhaHui_BG_Shade.jpg",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00000.png",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00001.png",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00002.png",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00003.png",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00004.png",
+            "Scence/JingCheng_KeJiYuanNei_ZhaHui/Shading/PNG/ScreenShot00005.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "京城科技院内部炸毁断壁残垣Shading视角",
+          "dims": [
+            1920,
+            1008
+          ],
+          "sha256": "f163224c35475a36d41b3e440a48908c390af36adab12af7fa3a40a9f006c5c5",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:36:44+08:00"
+        }
+      }
+    },
+    "Scence/KeJiYuan_ShiYanShi_PoSun": {
+      "asset_id": "Scence/KeJiYuan_ShiYanShi_PoSun",
+      "slots": {
+        "ruins_day": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\KeJiYuan_ShiYanShi_PoSun\\ruins_day.png",
+          "rel_file": "library/Scence/KeJiYuan_ShiYanShi_PoSun/ruins_day.png",
+          "tier": "design",
+          "source_rel": "Scence/KeJiYuan_ShiYanShi_PoSun/Design/KeJiYuan_ShiYanShi_PoSun_BG.jpg",
+          "source_asset_id": "Scence/KeJiYuan_ShiYanShi_PoSun",
+          "source_sha256": "657175b3c6d0d5e9df9738c8ac9da573c0f6c538d40267dd5cea4ab1b7909092",
+          "source_size_bytes": 2761937,
+          "source_mtime_ns": 1793188417552714300,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "科技院破损废墟日景露天结构设计图单格",
+          "dims": [
+            1721,
+            969
+          ],
+          "sha256": "cb5666472533547f297ee0762a8ba8d13cf5055c099f4ce7df5035c09f9b7236",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:36:44+08:00"
+        }
+      }
+    },
+    "Scence/PingMinQuJiuFangJian_Nei": {
+      "asset_id": "Scence/PingMinQuJiuFangJian_Nei",
+      "slots": {
+        "main": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\PingMinQuJiuFangJian_Nei\\main.png",
+          "rel_file": "library/Scence/PingMinQuJiuFangJian_Nei/main.png",
+          "tier": "design",
+          "source_rel": "Scence/PingMinQuJiuFangJian_Nei/Design/PingMinQuJiuFangJian_Nei_BG.jpg",
+          "source_asset_id": "Scence/PingMinQuJiuFangJian_Nei",
+          "source_sha256": "0ee499e8f6ec696863c775fa3bd6665af639cfc5dfe8db25667f38a0fec09cb4",
+          "source_size_bytes": 6259455,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "平民区旧房间室内陈设全景设计图单格",
+          "dims": [
+            1920,
+            824
+          ],
+          "sha256": "118457ab7b91ab8b1b856902882f8fa72ddc8a8a8c7b8a585fa940913258e126",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:49+08:00"
+        }
+      }
+    },
+    "Pro/HuoYanJingTi": {
+      "asset_id": "Pro/HuoYanJingTi",
+      "slots": {
+        "main": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Pro\\HuoYanJingTi\\main.png",
+          "rel_file": "library/Pro/HuoYanJingTi/main.png",
+          "tier": "shading",
+          "source_rel": "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade2.png",
+          "source_asset_id": "Pro/HuoYanJingTi",
+          "source_sha256": "58ad9dcdc3877959abd7ae7636347cf5d27b540b68bb0d8bf3f0317e08777d16",
+          "source_size_bytes": 2980052,
+          "source_mtime_ns": 1789735385000000000,
+          "known_shading_siblings": [
+            "Pro/HuoYanJingTi/Shading/HuoYanJingTi_Pro_shade.jpg",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade1.png",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade2.png",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade3.png",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade4.png",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade5.png",
+            "Pro/HuoYanJingTi/Shading/PNG/HuoYanJingTi_pro_Shade6.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "火焰晶体矿石半透烟褐橙红内部折射Shading",
+          "dims": [
+            1600,
+            1067
+          ],
+          "sha256": "20758e730bd381689c5096c9944f8a5d3626ec2f57b0f77d503d5dbd2d29b0a3",
+          "kind": "full_clean",
+          "updated_at": "2026-11-24T16:38:49+08:00"
+        }
+      }
+    },
+    "Pro/HuDieDao_Yin": {
+      "asset_id": "Pro/HuDieDao_Yin",
+      "slots": {
+        "blade": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Pro\\HuDieDao_Yin\\blade.png",
+          "rel_file": "library/Pro/HuDieDao_Yin/blade.png",
+          "tier": "shading",
+          "source_rel": "Pro/HuDieDao_Yin/Shading/HuDieDao_Yin.png",
+          "source_asset_id": "Pro/HuDieDao_Yin",
+          "source_sha256": "8e8dc3ece931543c57b2fb380e67d4002f17d6125cc0ffcab988dfc3ba3a9da3",
+          "source_size_bytes": 5647242,
+          "source_mtime_ns": 1783582689000000000,
+          "known_shading_siblings": [
+            "Pro/HuDieDao_Yin/Shading/HuDieDao_Yin.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v01.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v02.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v03.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v04.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v05.png",
+            "Pro/HuDieDao_Yin/Shading/PNG/v06.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "隐的蝴蝶刀单柄展开洁净Shading",
+          "dims": [
+            761,
+            1600
+          ],
+          "sha256": "e8524035ad5e32d7d00666674eaff54e38c8070902a6cea7cb16279bfa150bce",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:49+08:00"
+        }
+      }
+    },
+    "Pro/ZhangDao_ZhangDingTian": {
+      "asset_id": "Pro/ZhangDao_ZhangDingTian",
+      "slots": {
+        "blade": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Pro\\ZhangDao_ZhangDingTian\\blade.png",
+          "rel_file": "library/Pro/ZhangDao_ZhangDingTian/blade.png",
+          "tier": "design",
+          "source_rel": "Pro/ZhangDao_ZhangDingTian/Design/ZhangDao_ZhangDingTian_Pro.jpg",
+          "source_asset_id": "Pro/ZhangDao_ZhangDingTian",
+          "source_sha256": "9a260b505e2897421dc20748efdd9d80ce5d958c768576e4832a2edcf777c718",
+          "source_size_bytes": 13791449,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "章顶天长刀正面设计图单格",
+          "dims": [
+            158,
+            1600
+          ],
+          "sha256": "44e81b82e7365d1243a86dacf3d464cb9bdb05f859d14ab5e3423a733f5c3191",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:50+08:00"
+        }
+      }
+    },
+    "Pro/BiaoShiPai_ZhouShan": {
+      "asset_id": "Pro/BiaoShiPai_ZhouShan",
+      "slots": {
+        "tag": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Pro\\BiaoShiPai_ZhouShan\\tag.png",
+          "rel_file": "library/Pro/BiaoShiPai_ZhouShan/tag.png",
+          "tier": "shading",
+          "source_rel": "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade1.png",
+          "source_asset_id": "Pro/BiaoShiPai_ZhouShan",
+          "source_sha256": "9c07d711386db42d3385a313e6596534b99aeaacc9d6e24de4fb2b426c321994",
+          "source_size_bytes": 866480,
+          "source_mtime_ns": 1788416532000000000,
+          "known_shading_siblings": [
+            "Pro/BiaoShiPai_ZhouShan/Shading/BiaoShiPai_ZhouShan_Pro_Shade.jpg",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade1.png",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade2.png",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade3.png",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade4.png",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade5.png",
+            "Pro/BiaoShiPai_ZhouShan/Shading/PNG/BiaoShiPai_ZhouShan_Pro_Shade6.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "周山军用金属标识牌与链条Shading",
+          "dims": [
+            844,
+            938
+          ],
+          "sha256": "7a77cafaac536234b35a88eb568573dbe84e0a18702ac424bbd3172bcdfe2cab",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:50+08:00"
+        }
+      }
+    },
+    "VFX/TianXingGong": {
+      "asset_id": "VFX/TianXingGong",
+      "slots": {
+        "moon_star": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\TianXingGong\\moon_star.png",
+          "rel_file": "library/VFX/TianXingGong/moon_star.png",
+          "tier": "design",
+          "source_rel": "其他设计/TianXingGong/Design/TianXingGong.jpg",
+          "source_asset_id": "VFX/TianXingGong",
+          "source_sha256": "923f078b5a811f2c154d954cbbbd7c47b2fd82cda4ae7a2e1cd7f8b020852e3f",
+          "source_size_bytes": 2583366,
+          "source_mtime_ns": 1793188318389688000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "天星功月球星辰环形山蓄势原画单格",
+          "dims": [
+            1600,
+            829
+          ],
+          "sha256": "08c163ba1292af5b50b96e635867e3b8e734139f3e476aa07321dc71b82c1819",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:50+08:00"
+        }
+      }
+    },
+    "VFX/JiNengTiXian_LuYin": {
+      "asset_id": "VFX/JiNengTiXian_LuYin",
+      "slots": {
+        "slash": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\JiNengTiXian_LuYin\\slash.png",
+          "rel_file": "library/VFX/JiNengTiXian_LuYin/slash.png",
+          "tier": "design",
+          "source_rel": "其他设计/JiNengTiXian_LuYin/Design/JiNengTiXian_LuYin.png",
+          "source_asset_id": "VFX/JiNengTiXian_LuYin",
+          "source_sha256": "7766b83856faf155527568594acb34b84ade73935d3ca72dea3e364ae0658aaf",
+          "source_size_bytes": 62741767,
+          "source_mtime_ns": 1793072306000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐技能青蓝丝带斩击波纹色样单格",
+          "dims": [
+            1000,
+            780
+          ],
+          "sha256": "6d6a50c9b77a4b4a2242e3510d982c22d44d39b5b5bb1ce60df0e2167caeebec",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:52+08:00"
+        },
+        "star_orb": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\JiNengTiXian_LuYin\\star_orb.png",
+          "rel_file": "library/VFX/JiNengTiXian_LuYin/star_orb.png",
+          "tier": "design",
+          "source_rel": "其他设计/JiNengTiXian_LuYin/Design/JiNengTiXian_LuYin.png",
+          "source_asset_id": "VFX/JiNengTiXian_LuYin",
+          "source_sha256": "7766b83856faf155527568594acb34b84ade73935d3ca72dea3e364ae0658aaf",
+          "source_size_bytes": 62741767,
+          "source_mtime_ns": 1793072306000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐星光球中心核单格",
+          "dims": [
+            491,
+            348
+          ],
+          "sha256": "5f5727b6bb5057a79cf4c173427dd0ee958329eda0947563f850154dce316631",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:54+08:00"
+        }
+      }
+    },
+    "VFX/BaoFengZhan": {
+      "asset_id": "VFX/BaoFengZhan",
+      "slots": {
+        "main": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\BaoFengZhan\\main.png",
+          "rel_file": "library/VFX/BaoFengZhan/main.png",
+          "tier": "design",
+          "source_rel": "其他设计/BaoFengZhan/Design/BaoFengZhan.jpg",
+          "source_asset_id": "VFX/BaoFengZhan",
+          "source_sha256": "b7164203ebf43dd5c067d464301a96727e4191fa3ccfd15b21b0a8e162f55969",
+          "source_size_bytes": 2417023,
+          "source_mtime_ns": 1793188497367183100,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "周山暴风斩中央主图单格",
+          "dims": [
+            1600,
+            932
+          ],
+          "sha256": "450efd68da92bd25971c1c20ada5bcb6e692e7c0a07597a77da1e53acdea272a",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:54+08:00"
+        }
+      }
+    },
+    "VFX/YanHuoZhang": {
+      "asset_id": "VFX/YanHuoZhang",
+      "slots": {
+        "darkflame": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\YanHuoZhang\\darkflame.png",
+          "rel_file": "library/VFX/YanHuoZhang/darkflame.png",
+          "tier": "design",
+          "source_rel": "其他设计/YanHuoZhang/Design/YanHuoZhang_FX.jpg",
+          "source_asset_id": "VFX/YanHuoZhang",
+          "source_sha256": "c181f7558f92738712eaae5d4792ea5bdf8b9de8ad821694627b2e2c95d8f09c",
+          "source_size_bytes": 2313874,
+          "source_mtime_ns": 1793188435569550200,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "格兰妮炎火掌暗黑金红火焰主设计单格",
+          "dims": [
+            1384,
+            623
+          ],
+          "sha256": "882ca5511b3058c1830547172d25f6b7bfa1f22bef1fc044ebd9fe1df711cd5b",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:40:59+08:00"
+        }
+      }
+    },
+    "VFX/JiNengTiXian_TeLeiSi": {
+      "asset_id": "VFX/JiNengTiXian_TeLeiSi",
+      "slots": {
+        "burst": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\JiNengTiXian_TeLeiSi\\burst.png",
+          "rel_file": "library/VFX/JiNengTiXian_TeLeiSi/burst.png",
+          "tier": "design",
+          "source_rel": "其他设计/JiNengTiXian_TeLeiSi/Design/JiNengTiXian_TeLeiSi.png",
+          "source_asset_id": "VFX/JiNengTiXian_TeLeiSi",
+          "source_sha256": "ee8fe277372b5fee1cf75af8392dc5e6b09e2ff461f72861902387155707ea2a",
+          "source_size_bytes": 27429613,
+          "source_mtime_ns": 1793188351982858600,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "特蕾斯青绿暗黑外丝爆裂特效单格",
+          "dims": [
+            1204,
+            423
+          ],
+          "sha256": "7e25e4f9ebd078f6c72cc4f9522144a7c055b9e219c394af29faeca03082190c",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:55+08:00"
+        },
+        "ribbon": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\JiNengTiXian_TeLeiSi\\ribbon.png",
+          "rel_file": "library/VFX/JiNengTiXian_TeLeiSi/ribbon.png",
+          "tier": "design",
+          "source_rel": "其他设计/JiNengTiXian_TeLeiSi/Design/JiNengTiXian_TeLeiSi.png",
+          "source_asset_id": "VFX/JiNengTiXian_TeLeiSi",
+          "source_sha256": "ee8fe277372b5fee1cf75af8392dc5e6b09e2ff461f72861902387155707ea2a",
+          "source_size_bytes": 27429613,
+          "source_mtime_ns": 1793188351982858600,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "特蕾斯青绿黑丝条带拖尾特效单格",
+          "dims": [
+            729,
+            326
+          ],
+          "sha256": "344f16b9e819ca632a714c8508c67d33cbec35307ef03e4320849cf025a419e0",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:43:09+08:00"
+        }
+      }
+    },
+    "VFX/HanBingTianFu": {
+      "asset_id": "VFX/HanBingTianFu",
+      "slots": {
+        "frost_burst": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\HanBingTianFu\\frost_burst.png",
+          "rel_file": "library/VFX/HanBingTianFu/frost_burst.png",
+          "tier": "design",
+          "source_rel": "其他设计/HanBingTianFu/Design/HanBingTianfu_FX.jpg",
+          "source_asset_id": "VFX/HanBingTianFu",
+          "source_sha256": "a4c55a654edb9316ca7e1fccd00ff411e06e962e6bbbab31949886976d51182f",
+          "source_size_bytes": 12552331,
+          "source_mtime_ns": 1786504049000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "白雪寒冰天赋主冰晶爆裂设计单格",
+          "dims": [
+            1600,
+            889
+          ],
+          "sha256": "5afabb09a6180d36cbd536bed08c6ffa3eca9a078c9a8e05eee22457e2bdc687",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:38:56+08:00"
+        }
+      }
+    },
+    "VFX/JiNengTiXian_EDe": {
+      "asset_id": "VFX/JiNengTiXian_EDe",
+      "slots": {
+        "water_vortex": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\JiNengTiXian_EDe\\water_vortex.png",
+          "rel_file": "library/VFX/JiNengTiXian_EDe/water_vortex.png",
+          "tier": "design",
+          "source_rel": "其他设计/JiNengTiXian_EDe/Design/JiNengTiXian_EDe.png",
+          "source_asset_id": "VFX/JiNengTiXian_EDe",
+          "source_sha256": "faab952cd7013eeea7b10100583cbf6e1f6bdbd9b45c5459a0370dcb2a566502",
+          "source_size_bytes": 28180973,
+          "source_mtime_ns": 1793188293959427700,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "厄德水涡球体UE俯视设计单格",
+          "dims": [
+            988,
+            428
+          ],
+          "sha256": "c5e38bc724c1c96e998a4e74c05b8f75643d14442f1d702e044bfe46e62fa256",
+          "kind": "crop",
+          "updated_at": "2026-11-24T16:43:10+08:00"
+        }
+      }
+    },
+    "VFX/LuYin_MasterV3": {
+      "asset_id": "VFX/LuYin_MasterV3",
+      "slots": {
+        "pure_crop": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\LuYin_MasterV3\\pure_crop.png",
+          "rel_file": "library/VFX/LuYin_MasterV3/pure_crop.png",
+          "tier": "approved_anchor",
+          "source_rel": "AI:/.vfx/approved_anchors/luyin_vfx_master_v3_pure_crop.png",
+          "source_asset_id": null,
+          "source_sha256": "f97b900b6ba82322662e271d2c734cb9c183bad6fc9c21f760145cf47cba6740",
+          "source_size_bytes": 865071,
+          "source_mtime_ns": 1795500964200232700,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐最高统一总基准V3纯特效零人物切块（防近景姿态串图）",
+          "dims": [
+            682,
+            1008
+          ],
+          "sha256": "f97b900b6ba82322662e271d2c734cb9c183bad6fc9c21f760145cf47cba6740",
+          "kind": "approved_anchor",
+          "updated_at": "2026-11-24T16:38:58+08:00"
+        },
+        "texture_tile": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\VFX\\LuYin_MasterV3\\texture_tile.png",
+          "rel_file": "library/VFX/LuYin_MasterV3/texture_tile.png",
+          "tier": "approved_anchor",
+          "source_rel": "AI:/.vfx/approved_anchors/luyin_vfx_master_v3_texture_tile.png",
+          "source_asset_id": null,
+          "source_sha256": "125d96781139ea782b3feca912deb2eee4dd067d2edfb775201fa80584c381d1",
+          "source_size_bytes": 323453,
+          "source_mtime_ns": 1795505364622309000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐最高统一总基准V3暗黑蚀月+电蓝丝带+黑墨丝纹瓦片",
+          "dims": [
+            500,
+            500
+          ],
+          "sha256": "125d96781139ea782b3feca912deb2eee4dd067d2edfb775201fa80584c381d1",
+          "kind": "approved_anchor",
+          "updated_at": "2026-11-24T16:38:58+08:00"
+        }
+      }
+    },
+    "Scence/DiXiaKeJiYuan_ShiYanShi_Nei": {
+      "asset_id": "Scence/DiXiaKeJiYuan_ShiYanShi_Nei",
+      "slots": {
+        "terminal_reverse": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\DiXiaKeJiYuan_ShiYanShi_Nei\\terminal_reverse.png",
+          "rel_file": "library/Scence/DiXiaKeJiYuan_ShiYanShi_Nei/terminal_reverse.png",
+          "tier": "shading",
+          "source_rel": "Scence/DiXiaKeJiYuan_ShiYanShi_Nei/Shading/DiXiaKeJiYuan_ShiYanShi_Nei_BG_Shade.jpg",
+          "source_asset_id": "Scence/DiXiaKeJiYuan_ShiYanShi_Nei",
+          "source_sha256": "9ed7595d200d4a3e146c9b739ea362698b7e14c8ec241907e98eef3ab86a7916",
+          "source_size_bytes": 2748355,
+          "source_mtime_ns": 1793188563646963500,
+          "known_shading_siblings": [
+            "Scence/DiXiaKeJiYuan_ShiYanShi_Nei/Shading/DiXiaKeJiYuan_ShiYanShi_Nei_BG_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "地下实验室环形主控终端正面单格，只用材质和局部设备光",
+          "dims": [
+            1589,
+            687
+          ],
+          "sha256": "5c0e702aaa2325692dbd33cd174b7d8828ed723fde4a22f8abe507824e1a865d",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:03:33+08:00"
+        }
+      }
+    },
+    "Scence/FeiQiChaoShi_LouDing": {
+      "asset_id": "Scence/FeiQiChaoShi_LouDing",
+      "slots": {
+        "roof_parapet": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\FeiQiChaoShi_LouDing\\roof_parapet.png",
+          "rel_file": "library/Scence/FeiQiChaoShi_LouDing/roof_parapet.png",
+          "tier": "design",
+          "source_rel": "Scence/FeiQiChaoShi_LouDing/Design/FeiQiChaoShi_LouDing_BG_3.jpg",
+          "source_asset_id": "Scence/FeiQiChaoShi_LouDing",
+          "source_sha256": "c2cd9c63c92fe703bcfb77e06792c3c374328112edfb33b53baf64465a980746",
+          "source_size_bytes": 6051864,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "废弃超市楼顶 B 单格，栏墙、设备箱和混凝土材质",
+          "dims": [
+            1920,
+            807
+          ],
+          "sha256": "ce0fc759196a04e126245841f71d64cd8b25dc5415db006e5439cc08a26f9dce",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:03:34+08:00"
+        },
+        "roof_surface_shadow": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\FeiQiChaoShi_LouDing\\roof_surface_shadow.png",
+          "rel_file": "library/Scence/FeiQiChaoShi_LouDing/roof_surface_shadow.png",
+          "tier": "design",
+          "source_rel": "Scence/FeiQiChaoShi_LouDing/Design/FeiQiChaoShi_LouDing_BG_3.jpg",
+          "source_asset_id": "Scence/FeiQiChaoShi_LouDing",
+          "source_sha256": "c2cd9c63c92fe703bcfb77e06792c3c374328112edfb33b53baf64465a980746",
+          "source_size_bytes": 6051864,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            590,
+            200
+          ],
+          "sha256": "cc71b91138eaa1ccdc960df050a13ea2353ce841273af255651cadf46bf0d8c4",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:09+08:00"
+        },
+        "preimpact_storefront": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\FeiQiChaoShi_LouDing\\preimpact_storefront.png",
+          "rel_file": "library/Scence/FeiQiChaoShi_LouDing/preimpact_storefront.png",
+          "tier": "design",
+          "source_rel": "Scence/FeiQiChaoShi_LouDing/Design/FeiQiChaoShi_LouDing_BG_3.jpg",
+          "source_asset_id": "Scence/FeiQiChaoShi_LouDing",
+          "source_sha256": "c2cd9c63c92fe703bcfb77e06792c3c374328112edfb33b53baf64465a980746",
+          "source_size_bytes": 6051864,
+          "source_mtime_ns": 1782712449000000000,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            1100,
+            362
+          ],
+          "sha256": "593a83f4cde22ba4fe601fc63fe2ad1822a215415d4d2de4064412fb1ef6d94a",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:10+08:00"
+        }
+      }
+    },
+    "Scence/FeiQiChaoShi_TanTaBan": {
+      "asset_id": "Scence/FeiQiChaoShi_TanTaBan",
+      "slots": {
+        "concrete_debris": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\FeiQiChaoShi_TanTaBan\\concrete_debris.png",
+          "rel_file": "library/Scence/FeiQiChaoShi_TanTaBan/concrete_debris.png",
+          "tier": "design",
+          "source_rel": "Scence/FeiQiChaoShi_TanTaBan/Design/FeiQiChaoShi_TanTaBan_BG.jpg",
+          "source_asset_id": "Scence/FeiQiChaoShi_TanTaBan",
+          "source_sha256": "dd177cdc24efd1d0e80ca587665aea40a431165a36905504671abb3021c2693e",
+          "source_size_bytes": 3328685,
+          "source_mtime_ns": 1793188453008605600,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "废弃超市坍塌版混凝土板断面、钢筋与骨料单格，不定本镜破坏体量",
+          "dims": [
+            1532,
+            1023
+          ],
+          "sha256": "82f7f43c4a97563c6450df39feeaa00654cf0f92f7ee0bb45275374c2bcd3ca2",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:03:34+08:00"
+        }
+      }
+    },
+    "Scence/FeiQiChaoShiNei": {
+      "asset_id": "Scence/FeiQiChaoShiNei",
+      "slots": {
+        "barred_hall": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\FeiQiChaoShiNei\\barred_hall.png",
+          "rel_file": "library/Scence/FeiQiChaoShiNei/barred_hall.png",
+          "tier": "design",
+          "source_rel": "Scence/FeiQiChaoShiNei/Design/FeiQiChaoShiNei.png",
+          "source_asset_id": "Scence/FeiQiChaoShiNei",
+          "source_sha256": "7a8eb0d2b8c56506f29ba55d0e16a3a001c0f0c4e4bf52e887701fdf2b9aed80",
+          "source_size_bytes": 6614174,
+          "source_mtime_ns": 1793188490180446700,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "废弃超市内柱网与顶板的一格材质，不复制窗向或外光",
+          "dims": [
+            394,
+            283
+          ],
+          "sha256": "380787d1f1d57aaae580f07cf90ffec475f1b9bd422bc8e8e3e7af2526e214cf",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:03:35+08:00"
+        }
+      }
+    },
+    "Scence/JingCheng_FeiQiDaLouNei": {
+      "asset_id": "Scence/JingCheng_FeiQiDaLouNei",
+      "slots": {
+        "fire_stair_reverse": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\JingCheng_FeiQiDaLouNei\\fire_stair_reverse.png",
+          "rel_file": "library/Scence/JingCheng_FeiQiDaLouNei/fire_stair_reverse.png",
+          "tier": "shading",
+          "source_rel": "Scence/JingCheng_FeiQiDaLouNei/Shading/JingCheng_FeiQiDaLouNei_BG_Shade.jpg",
+          "source_asset_id": "Scence/JingCheng_FeiQiDaLouNei",
+          "source_sha256": "ddf15ff4d9425de34a39f6ae472e61b2349ac9fc8493ffddb8bd102bfed8e522",
+          "source_size_bytes": 2744958,
+          "source_mtime_ns": 1793188445364718000,
+          "known_shading_siblings": [
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/JingCheng_FeiQiDaLouNei_BG_Shade.jpg",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00000.png",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00001.png",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00002.png",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00003.png",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00004.png",
+            "Scence/JingCheng_FeiQiDaLouNei/Shading/PNG/HighresScreenshot00005.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "京城废弃大楼内楼梯俯看原篝火角度，同空间栏杆地标和受光",
+          "dims": [
+            1802,
+            778
+          ],
+          "sha256": "253c90b49cf7cf6b458760c568d5763dc40c4cbb6a4ae9859b9aebc64cd35904",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:03:35+08:00"
+        }
+      }
+    },
+    "Character/GeLanNi_ShouKao": {
+      "asset_id": "Character/GeLanNi_ShouKao",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\GeLanNi_ShouKao\\front.png",
+          "rel_file": "library/Character/GeLanNi_ShouKao/front.png",
+          "tier": "design",
+          "source_rel": "Character/GeLanNi_ShouKao/Design/GeLanNi_ShouKao_CH.jpg",
+          "source_asset_id": "Character/GeLanNi_ShouKao",
+          "source_sha256": "4bb795dc4128764ee86bde4c114079a1fdadfdeb4348cbe46fb54889a23833de",
+          "source_size_bytes": 2243307,
+          "source_mtime_ns": 1793188448505831300,
+          "known_shading_siblings": [],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "格兰妮EP004场1受铐绷带版正面全身（酒红短裙战甲+手臂绷带+双手重型银钢手铐短链）",
+          "dims": [
+            520,
+            1430
+          ],
+          "sha256": "c3de58b8461c7f810a60aae2cf2913171696cb9dddd33125f843f429e280d315",
+          "kind": "manual_override",
+          "updated_at": "2026-11-24T17:13:49+08:00"
+        }
+      }
+    },
+    "Scence/LuYinZhangPeng_JinLing": {
+      "asset_id": "Scence/LuYinZhangPeng_JinLing",
+      "slots": {
+        "inside_no_led": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Scence\\LuYinZhangPeng_JinLing\\inside_no_led.png",
+          "rel_file": "library/Scence/LuYinZhangPeng_JinLing/inside_no_led.png",
+          "tier": "shading",
+          "source_rel": "Scence/LuYinZhangPeng_JinLing/Shading/LuYinZhangPeng_JinLing_BG_Shade.jpg",
+          "source_asset_id": "Scence/LuYinZhangPeng_JinLing",
+          "source_sha256": "49068439bff5ce920861e676e2ddaec18ff55d664f0429ae237e4f25eb886d57",
+          "source_size_bytes": 2995643,
+          "source_mtime_ns": 1793188563612963700,
+          "known_shading_siblings": [
+            "Scence/LuYinZhangPeng_JinLing/Shading/LuYinZhangPeng_JinLing_BG_Shade.jpg"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "陆隐金陵军帐内景Shading（已物理清除立柱白LED灯管与顶灯，专用于暗场/全息星空光效戏）",
+          "dims": [
+            1880,
+            798
+          ],
+          "sha256": "6c6e51dda0eacc7aec51425a4557c7f4b70b11b9a6c152fb1b3f65ff382e42cd",
+          "kind": "manual_override",
+          "updated_at": "2026-11-24T17:16:15+08:00"
+        }
+      }
+    },
+    "Character/DaZuiNan": {
+      "asset_id": "Character/DaZuiNan",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\DaZuiNan\\front.png",
+          "rel_file": "library/Character/DaZuiNan/front.png",
+          "tier": "shading",
+          "source_rel": "Character/DaZuiNan/Shading/PNG/A.png",
+          "source_asset_id": "Character/DaZuiNan",
+          "source_sha256": "943c57cd5e4789ddc8cb703b665dfc679dab7457d4653f1d6c8474b67c398db1",
+          "source_size_bytes": 16048544,
+          "source_mtime_ns": 1788765085000000000,
+          "known_shading_siblings": [
+            "Character/DaZuiNan/Shading/DaZuiNan_CH_Shade.png",
+            "Character/DaZuiNan/Shading/PNG/A.png",
+            "Character/DaZuiNan/Shading/PNG/B.png",
+            "Character/DaZuiNan/Shading/PNG/C.png",
+            "Character/DaZuiNan/Shading/PNG/D.png",
+            "Character/DaZuiNan/Shading/PNG/DaZuiNan_CH_Shade.png",
+            "Character/DaZuiNan/Shading/PNG/E.png",
+            "Character/DaZuiNan/Shading/PNG/F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            690,
+            1100
+          ],
+          "sha256": "af49473b357b4bbe5be49f51de0cc8a427a234822c75489c538b9dd420c90f5b",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:07+08:00"
+        }
+      }
+    },
+    "Character/ChangDaoNan": {
+      "asset_id": "Character/ChangDaoNan",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\ChangDaoNan\\front.png",
+          "rel_file": "library/Character/ChangDaoNan/front.png",
+          "tier": "shading",
+          "source_rel": "Character/ChangDaoNan/Shading/PNG/A.png",
+          "source_asset_id": "Character/ChangDaoNan",
+          "source_sha256": "9c3e046e3401182c8c6b7e299f129d6fd2d2fe374cf78bb3f0fb884f9ac6245b",
+          "source_size_bytes": 16916491,
+          "source_mtime_ns": 1788858805000000000,
+          "known_shading_siblings": [
+            "Character/ChangDaoNan/Shading/ChangDaoNan_CH_Shade.png",
+            "Character/ChangDaoNan/Shading/PNG/A.png",
+            "Character/ChangDaoNan/Shading/PNG/B.png",
+            "Character/ChangDaoNan/Shading/PNG/C.png",
+            "Character/ChangDaoNan/Shading/PNG/ChangDaoNan_CH_Shade.png",
+            "Character/ChangDaoNan/Shading/PNG/D.png",
+            "Character/ChangDaoNan/Shading/PNG/E.png",
+            "Character/ChangDaoNan/Shading/PNG/F.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            675,
+            1100
+          ],
+          "sha256": "7c3be9696f0b26c6d9b6d915dd78978d99d275bf22dd82598f84977980ae9e2b",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:08+08:00"
+        }
+      }
+    },
+    "Character/JiRouNvB": {
+      "asset_id": "Character/JiRouNvB",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\JiRouNvB\\front.png",
+          "rel_file": "library/Character/JiRouNvB/front.png",
+          "tier": "shading",
+          "source_rel": "Character/JiRouNvB/Shading/PNG/A.png",
+          "source_asset_id": "Character/JiRouNvB",
+          "source_sha256": "245b726ccbe965a362d2ee70049bde05fa0f79ff892d076051e1131d8f971cd6",
+          "source_size_bytes": 15965932,
+          "source_mtime_ns": 1788490289000000000,
+          "known_shading_siblings": [
+            "Character/JiRouNvB/Shading/JiRouNvB_CH_Shade.png",
+            "Character/JiRouNvB/Shading/PNG/A.png",
+            "Character/JiRouNvB/Shading/PNG/B.png",
+            "Character/JiRouNvB/Shading/PNG/C.png",
+            "Character/JiRouNvB/Shading/PNG/D.png",
+            "Character/JiRouNvB/Shading/PNG/E.png",
+            "Character/JiRouNvB/Shading/PNG/F.png",
+            "Character/JiRouNvB/Shading/PNG/JiRouNvB_CH_Shade.png"
+          ],
+          "pin_design": false,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            682,
+            1100
+          ],
+          "sha256": "fcb3dec15202776ceaaee69225c4bb2b7208a8ed96faad69a294dadcc3fc3101",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:08+08:00"
+        }
+      }
+    },
+    "Character/HeiDongNv": {
+      "asset_id": "Character/HeiDongNv",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\HeiDongNv\\front.png",
+          "rel_file": "library/Character/HeiDongNv/front.png",
+          "tier": "design",
+          "source_rel": "Character/HeiDongNv/Design/HeiDongNv_CH.jpg",
+          "source_asset_id": "Character/HeiDongNv",
+          "source_sha256": "9c8ed5697cbf4e9d81bc504455b901868dcb0cf7a7320fba3d8599d14ed9f399",
+          "source_size_bytes": 2342877,
+          "source_mtime_ns": 1793188461968892400,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            406,
+            1100
+          ],
+          "sha256": "1ba0197e7e1dc310f1bba45a627bc01bcb6dd5f50c38fe0d6f845d90a4ccd423",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:08+08:00"
+        }
+      }
+    },
+    "Character/JiRouNvA": {
+      "asset_id": "Character/JiRouNvA",
+      "slots": {
+        "front": {
+          "file": "<TX_WORKSPACE>\\asset_vault\\library\\Character\\JiRouNvA\\front.png",
+          "rel_file": "library/Character/JiRouNvA/front.png",
+          "tier": "design",
+          "source_rel": "Character/JiRouNvA/Design/JiRouNvA_CH.jpg",
+          "source_asset_id": "Character/JiRouNvA",
+          "source_sha256": "9e3e10a169931373585e20144a9dc154da06562f38a75fca01bddff7bf48b57f",
+          "source_size_bytes": 2940895,
+          "source_mtime_ns": 1793188544464613400,
+          "known_shading_siblings": [],
+          "pin_design": true,
+          "status": "verified",
+          "view_desc": "EP006 sc004 production reference: appearance only; not camera or lighting",
+          "dims": [
+            672,
+            1100
+          ],
+          "sha256": "03af5e9ac483c3b2b600f4b03ae99b19c2530ef93a86dae1fac0bf8286f06ede",
+          "kind": "crop",
+          "updated_at": "2026-11-24T17:19:09+08:00"
+        }
+      }
+    }
+  }
+}

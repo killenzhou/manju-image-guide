@@ -1,0 +1,83 @@
+{
+  "status": "approved",
+  "approval_date": "2026-11-17",
+  "approval_evidence": "用户附上与试镜原图相同的两张图，明确回复“就按照这个了这两个非常好。第一遍出就统一按照这个标准就可以”。",
+  "scope": "EP006 A/B 测试后，用户选定 A 组用法为踏星后续首版默认：每镜实传一张最贴合的已通过样板，优先借画面质感、主体清晰度、柔光过渡与前后景层次。首版保住场次时段与光源逻辑，不搬用样板的光源位置、方向、强弱或色温；具体用光可按审核反馈后期调整。不替代构图、资产与单场 CK，不自动追改旧图。",
+  "references": [
+    {
+      "id": "interior-soft",
+      "shot": "Ep006_sc003_063",
+      "file": "../assets/first-pass-look/ep006_sc003_063_soft-window.png",
+      "source": "work/ep006_lightpass/style_03A-v02.png",
+      "sha256": "88f74826f6f802ae3eef7f50e8b42f5563ee64a711a6289ef4c7997d867a1ac9",
+      "size": [
+        1938,
+        812
+      ],
+      "applies_to": "陆隐住处，人物对话与室内窗光",
+      "borrow": "柔光包裹人物、轮廓清楚，近处表演清晰、远景自然退焦，高光不过白，人物固有色保留。",
+      "exclude": "不迁移暖色、窗型、城市、人物、服装、机位及家具。"
+    },
+    {
+      "id": "depth-action",
+      "shot": "Ep006_sc004_095",
+      "file": "../assets/first-pass-look/ep006_sc004_095_action-depth.png",
+      "source": "work/ep006_lightpass/style_04A-v02.png",
+      "sha256": "f7b2e7ab8748f2f7c9268cd042da09924978deb4cf1eb2bb522a13704a0ed436",
+      "size": [
+        1938,
+        812
+      ],
+      "applies_to": "废弃超市，群像、动作与大空间",
+      "borrow": "主体清楚、后排人物仍可辨，前中后景自然分层，现有侧光柔和过渡，暗部有材质。",
+      "exclude": "不迁移尘雾、具体来光方向、低机位、人物、武器、柱网、货架或场景时段。"
+    }
+  ],
+  "night_references": [
+    {
+      "id": "night-rooftop-wide",
+      "title": "夜戏 01｜屋顶远景",
+      "file": "../assets/first-pass-look/night/night-rooftop-wide.png",
+      "status": "approved",
+      "approval_evidence": "用户随消息附原图，认可夜戏光感、色调和人物质感；仅作为风格补充。",
+      "sha256": "eb12823745673895569bcf15306280414cebb08606810505f6cc6f6923eb84de",
+      "size": [
+        3840,
+        1646
+      ],
+      "applies_to": "夜外大全景、人物占比小的空间镜头",
+      "borrow": "冷蓝灰夜色，暗楼之间的远近层次，屋顶局部亮带把视线引到人物。",
+      "exclude": "不照搬光源位置、方向或强弱，不迁移人物身份、服装、构图和场景。"
+    },
+    {
+      "id": "night-character-close",
+      "title": "夜戏 02｜人物特写",
+      "file": "../assets/first-pass-look/night/night-character-close.png",
+      "status": "approved",
+      "approval_evidence": "用户随消息附原图，认可夜戏光感、色调和人物质感；仅作为风格补充。",
+      "sha256": "7ae4eab22b8e652ae639317a139b4785975d81676ca15fd509be47721822f571",
+      "size": [
+        3840,
+        1646
+      ],
+      "applies_to": "夜戏人物近景、特写",
+      "borrow": "冷色背景衬自然肤色；面部明暗过渡柔和，眼神和受光发丝清楚。",
+      "exclude": "不照搬光源位置、方向或强弱，不迁移人物身份、服装、构图和场景。"
+    },
+    {
+      "id": "night-rooftop-two-shot",
+      "title": "夜戏 03｜屋顶双人镜头",
+      "file": "../assets/first-pass-look/night/night-rooftop-two-shot.png",
+      "status": "approved",
+      "approval_evidence": "用户随消息附原图，认可夜戏光感、色调和人物质感；仅作为风格补充。",
+      "sha256": "a433e2d0ab6285d20788617d1bba8fc894a60860a150ba27582515230e4d4e55",
+      "size": [
+        3840,
+        1646
+      ],
+      "applies_to": "夜外双人、中景及中全景",
+      "borrow": "冷夜氛围下人物暗部有层次，发丝、皮肤、皮革和织物仍能分辨。",
+      "exclude": "不照搬光源位置、方向或强弱，不迁移人物身份、服装、构图和场景。"
+    }
+  ]
+}

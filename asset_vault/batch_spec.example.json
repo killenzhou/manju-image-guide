@@ -1,0 +1,55 @@
+{
+  "batch_name": "EP003_S05_Example",
+  "episode": "EP003",
+  "scenes": [5],
+  "work_dir": "work/EP003_S05_Example",
+  "output_dir": "output/EP003_S05_Example",
+  "project_id": "<可选：已有画布ID；留空则自动新建>",
+  "canvas_title": "TX_EP003_S05_Example_5.5",
+  "model": "seedream_5.5",
+  "resolution": "2K",
+  "ratio": "21:9",
+  "credit_ceiling": 10,
+  "design_mode": "Production",
+  "ck_status": "skipped",
+  "shots": [
+    {
+      "stem": "01_Ep003_sc005_001",
+      "shot": "Ep003_sc005_001",
+      "scene": 5,
+      "mode": "new",
+      "plate": "work/EP003_S05_Lighting_4Shots_Seedream55_20261124/plates/01_Ep003_sc005_001.png",
+      "references": [
+        {
+          "vault": "Character/LuYin_Xin:back",
+          "role": "character",
+          "borrow": "陆隐新装背面蓝色丹宁夹克与白色骷髅纹造型",
+          "exclude": "灰棚平光与A字站姿"
+        },
+        {
+          "vault": "Scence/QianXianZhenDi:gorge",
+          "role": "scene",
+          "borrow": "前线峡谷岩石质感与金属栈桥结构",
+          "exclude": "原设计图相机机位"
+        }
+      ],
+      "beat": "陆隐贴着前线阵地峡谷绝壁低空急掠。",
+      "change": "将Layout灰模重塑为破晓穿云光影下的写实CG电影镜头。",
+      "lighting": "右侧穿云暖金侧逆光切出崖壁层次与陆隐轮廓，峡谷底留冷蓝暗部。",
+      "locks": {
+        "camera": "严格锁定第一张Layout广角俯仰机位与视场",
+        "frame": "保留21:9全画幅四边，无黑边无裁切",
+        "characters": "陆隐背身急掠小尺度站位与动作不动",
+        "scene": "保持峡谷左右山体走向与前沿堡垒位置",
+        "other": "仅升级真实材质、穿云光照与空气纵深"
+      },
+      "prompt_tier": "full",
+      "prompt": "在此编写完整的镜头出图提示词（大场面详尽写透空间、防串味与光照关系，写透即止，无需凑固定字数）...",
+      "output_name": "Ep003_sc005_001_Example_v01_4K.png",
+      "t_label": "EP003 第5场（3-5-1 陆隐贴崖疾飞）",
+      "art_ref": "vault:Scence/QianXianZhenDi:gorge",
+      "art_source": "陆隐背面Shading + 前线阵地山谷Shading",
+      "art_note": "示例规范记录。"
+    }
+  ]
+}

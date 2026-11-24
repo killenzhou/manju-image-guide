@@ -4,9 +4,11 @@ import hashlib
 import io
 import json
 from pathlib import Path
+import os
 import re
 import shutil
 import subprocess
+import sys
 
 from PIL import Image
 
@@ -112,9 +114,35 @@ def load_brief(path):
             if not ref.get('source') or not isinstance(ref.get('at_seconds'), (int, float)) or ref['at_seconds'] < 0:
                 raise ValueError('VFX keyframes need their original source and seconds')
         refs.append(str(source))
-    return {'brief': str(path), 'brief_sha256': digest(path), 'shot': b['shot'],
-            'mode': b['mode'], 'plate': str(plate), 'plate_size': list(dimensions),
-            'reference_files': refs}
+    vault_warnings = []
+    try:
+        ai_root = Path(os.environ.get('TX_AI_ROOT') or Path(__file__).resolve().parents[4]).resolve()
+        code_vault_dir = Path(__file__).resolve().parents[4] / 'asset_vault'
+        if (code_vault_dir / 'vault.py').is_file():
+            if str(code_vault_dir) not in sys.path:
+                sys.path.insert(0, str(code_vault_dir))
+            import vault as tx_vault
+            lib_dir = tx_vault.LIBRARY_DIR.resolve()
+            cat = None
+            for rf in refs:
+                rp = Path(rf).resolve()
+                if lib_dir in rp.parents:
+                    if cat is None:
+                        cat = tx_vault.scan_assets(save=False)
+                    chk = tx_vault.check_file_freshness(rp, catalog=cat)
+                    if chk and chk.get('status') != 'FRESH':
+                        msg = f"{chk['asset_id']}:{chk['slot']} [{chk['status']}] {chk.get('reason', '')}"
+                        vault_warnings.append(msg)
+                        print(f"[shot_delivery][vault_warning] {msg}", file=sys.stderr)
+    except Exception:
+        pass
+
+    out = {'brief': str(path), 'brief_sha256': digest(path), 'shot': b['shot'],
+           'mode': b['mode'], 'plate': str(plate), 'plate_size': list(dimensions),
+           'reference_files': refs}
+    if vault_warnings:
+        out['vault_warnings'] = vault_warnings
+    return out
 
 
 def detected_matte(image):

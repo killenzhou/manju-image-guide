@@ -31,7 +31,7 @@
 ## 同一条工作线
 
 1. **定镜号和阶段。** 将 `3-6-69` 解析为 `Ep003_sc006_069`，保留 `a/b` 等版本尾缀。按项目索引找到单镜 Layout，必要时核前后镜；剧本/StoryBook 定时段和因果，Layout 定机位、动作和遮挡。优先用现有已验证原帧；如需重新抽帧，从原视频按一基帧号取 PNG。只剥离有证据的预览框／时间码，不裁有效画面。把集／场／镜、源文件、帧号或秒数、有效区记入工作资料。
-2. **按实际可见项配参考。** 场景、角色、服装和道具优先匹配本镜 Shading，缺合适 Shading 才回退到设计图；因设计图偏手绘易影响整体写实 CG 画风，使用设计图时只借本镜可核实的造型／地标，或标注要借的光影层次与情绪；排除手绘画风、资产展示光与参考机位；成图用光不照抄 Shading 展示光。连续镜先锁主光动机、时间、效果色阶与衰减；已确认样板只迁移明确的用光或材质判断。没有审批证据的参考只标候选。
+2. **按实际可见项配参考。** 先查 `asset_vault/vault.py resolve`（`FRESH` 直接复用，缺失或 `STALE_*` 再用 `vault.py crop` 裁入公共库；严守服装/伤态版本与场景观察视角匹配）。场景、角色、服装和道具优先匹配本镜 Shading，缺合适 Shading 才回退到设计图；因设计图偏手绘易影响整体写实 CG 画风，使用设计图时只借本镜可核实的造型／地标，或标注要借的光影层次与情绪；排除手绘画风、资产展示光与参考机位；成图用光不照抄 Shading 展示光。连续镜先锁主光动机、时间、效果色阶与衰减；已确认样板只迁移明确的用光或材质判断。没有审批证据的参考只标候选。
 3. **有实质特效才找动态。** 拆蓄力、释放、命中和余波，按同阶段、规模、方向、受光和环境反馈筛片；实际核原片、记起止秒、选可用高清关键帧。纯表演／普通氛围不搜库。出图只传入确实要借用的帧，不拿 GIF、整板截图、占位色或其他角色当底图。若用户只要参考，走 GIF/PureRef 分支，到这里不启动出图。
 4. **整理简报再执行。** 新镜的底图是有效 Layout；返修的底图是被选版本的干净成图。逐张标用途和排除项；明确画面焦点、光源、亮暗与受光对象、特效起点和流向、与前后镜的区别。保存 JSON 并用下方命令检查，然后调用 [适配器](render-adapters.md)。带批注的图可辅助定位，但不作为无批注成图的替代底图。工具无匹配能力时交接简报、提示词、底图与参考，状态「待出图」。
 5. **对照实图后交付。** 检查构图四边、机位、角色位置／身份／姿势、场景及未修改区；再验阶段、动势、光源、暗面、材质和前后景。失败只纠正相关项，不把尺寸通过当成画面通过。合格后保留原始成图，用 `publish` 输出 3840 像素宽 PNG 和 `.qa.json`。默认使用原尺寸或 Lanczos 等比重采样（不是 AI 超分），保留全幅；另用超分时保留初始渲染并记实际工具与方法；不得用裁切、填边或拉伸伪造画幅匹配。没有实际执行时不登记成片或审批。
@@ -79,10 +79,14 @@
 
 ```powershell
 $tool = "skills/tx-layout-atmosphere/scripts/shot_delivery.py"
+$runner = "skills/tx-layout-atmosphere/scripts/tx_batch_runner.py"
+python -X utf8 asset_vault/vault.py resolve "陆隐:front,back,face" --json
 python -X utf8 $tool frame --source "<单镜原片>" --frame 27 --active-rect 237 99 1575 660 --boundary-evidence "核对预览框四边，仅排除黑框和时间码" --out "work/shot/plate_069.png"
 python -X utf8 $tool check-brief --brief "work/shot/brief_069.json"
 # 在所选适配器中，实际传入简报、底图和所列参考；保存原始结果并目视复核
 python -X utf8 $tool publish --brief "work/shot/brief_069.json" --raw "work/shot/raw_069.png" --renderer "<实际工具>" --review "对照原底图：四边、机位、人物、街景和只改项已检查" --out "output/EP003_sc006_069_DarkFlame_v03_4K.png"
+# 即梦 5.5 批量统一入口（按需顺序执行 prepare -> upload -> render -> qc-board -> publish）：
+python -X utf8 $runner prepare --spec "work/<batch>/batch_spec.json"
 ```
 
 无预览框时省略 `--active-rect` 和 `--boundary-evidence`。脚本不会从生图结果自动裁画面；只允许原生整数像素取整带来的 4K 高度差（最多 2px），仍按原始成图比例缩放。黑边检测只作保守拦截，真实暗边如误报，先目视确认并用 `--edge-evidence` 留痕，不用于放行实质黑边。重新打开最终 PNG 检查，用户回复只交可点击路径、实际分辨率与核心变化；中间材料和记录保留在项目中。

@@ -1,6 +1,80 @@
 {
   "schema_version": 1,
-  "approved_references": [],
+  "approved_references": [
+    {
+      "id": "luyin-vfx-master-v3-node3",
+      "effect": "陆隐全招数特效形态与色彩设计感最高总锚点（画布0→1→2→3终版3：暗黑蚀月 + S形通透宝蓝丝绸带 + 顺流编织漆黑暗丝 + 纤细电丝 + 星座几何连线）",
+      "path": "Y:\\TX\\AI\\.vfx\\approved_anchors\\luyin_vfx_master_v3_node3.png",
+      "pure_vfx_crop": "Y:\\TX\\AI\\.vfx\\approved_anchors\\luyin_vfx_master_v3_pure_crop.png",
+      "texture_tile": "Y:\\TX\\AI\\.vfx\\approved_anchors\\luyin_vfx_master_v3_texture_tile.png",
+      "canvas_project_id": "7cc32ca4-a9a5-4ea0-901b-cedfeb0a06d9",
+      "node_id": "node_v994z4gbf5",
+      "res_id": "6af866d7-1d6d-44aa-b8b9-f4aff247c0ad",
+      "evolution_nodes": {
+        "0": "node_gehp3g20fc",
+        "1": "node_ppt7wn5yvc",
+        "2": "node_9zr26marw5",
+        "3": "node_v994z4gbf5"
+      },
+      "status": "approved",
+      "approval_evidence": "2026-11-24 用户亲自在画布7cc32ca4迭代0→1→2→3并明确指定3为最终设计感目标，要求陆隐所有招数与效果统一提升至此级别",
+      "observations": [
+        "暗黑蚀月高反差核心（黑曜石/暗墨紫清晰环形山暗月 + 紫白宝蓝月蚀爆边，非死黑洞也非过曝大白灯）",
+        "2~3条优雅雕塑感S形薄透电蓝/深宝蓝丝绸主带（大气暗部留白，不堆砌杂乱厚环）",
+        "顺流编织的纤细柔顺漆黑/墨紫液态拉丝（与蓝带同曲率阴阳交织，绝非外圈生硬尖刺黑荆棘）",
+        "极克制的星蚀紫微色差与极细锐白青闪电丝（紫红仅藏于蚀月边光与黑丝交界，拒绝霓虹紫红泛滥）",
+        "暗部负空间内克制漂浮的《踏星》专属极细星座几何连线图与微星点"
+      ],
+      "constraints": "陆隐所有后续招数设计与出图的最高统一基准；近景手部/人物镜头严禁整图直塞。遇与节点3左侧飘向不同的新动态轨迹/3D纵深镜头时，须采用质感×曲线解耦工作流：优先用中性500x500纯材质块（texture_tile: luyin_vfx_master_v3_texture_tile.png）仅保丝绸/暗丝/星座材质，再配合按本镜Layout自绘的21:9三维威力曲线引导图主导动态与纵深穿插"
+    },
+    {
+      "id": "ep003-sc006-014-teleisi-vfx",
+      "effect": "特雷斯狂雷能量流（暗骨反差与前景景深基准）",
+      "path": "Y:\\TX\\AI\\output\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\Ep003_sc006_014_Seedream55_VFX_v01_4K.png",
+      "brief": "Y:\\TX\\AI\\work\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\briefs\\20_Ep003_sc006_014_brief.json",
+      "canvas_project_id": "7cc32ca4-a9a5-4ea0-901b-cedfeb0a06d9",
+      "status": "approved",
+      "approval_evidence": "2026-11-24 用户于对话中明确上传认可该成图的特效形态、细节与UE质感，指定作为后续气流与陆隐招数设计的最低质感底线",
+      "observations": [
+        "量化配色预算（浅青绿50% + 电光青蓝30% + 嫩黄白核10% + 暗黑墨蓝丝状外拖尾10%）",
+        "使用10%暗黑/墨蓝外侧丝状骨架切出高光主体，防止加法发光糊成惨白棉絮",
+        "左下前景大透视主光束冲向镜头并叠加一致方向180度快门运动模糊与细锐Velocity Sparks",
+        "风暴夜压暗非受光背景，使能量成为绝对主光源并实打实照亮战甲银面与下方碎岩"
+      ],
+      "constraints": "迁移四层结构、暗骨对比与前景景深语法，不把特雷斯的浅青绿配色照搬给陆隐"
+    },
+    {
+      "id": "ep003-sc001-002-luyin-ribbon-vfx",
+      "effect": "陆隐近景星能缠绕丝带（UE5半透明菲涅尔Mesh Ribbon与近景受光基准）",
+      "path": "Y:\\TX\\AI\\output\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\Ep003_sc001_002_Seedream55_VFX_v01_4K.png",
+      "brief": "Y:\\TX\\AI\\work\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\briefs\\02_Ep003_sc001_002_brief.json",
+      "canvas_project_id": "7cc32ca4-a9a5-4ea0-901b-cedfeb0a06d9",
+      "status": "approved",
+      "approval_evidence": "2026-11-24 用户于对话中明确上传认可该成图的UE5质感与丝带细节，指定作为陆隐招数设计的最低质感基准",
+      "observations": [
+        "将Layout弯曲多边形片重塑为UE5半透明曲面网格丝带（Translucent Fresnel Mesh Ribbon）",
+        "锋利菲涅尔亮边配合薄透带体内沿流向舒展的UV流动丝纹与包裹细碎星屑",
+        "近景采用tight精简提示词（566字/2张参考），避免臃肿词句与过多参考图拉偏",
+        "主动压暗后方废墟残垣，掌心光源直接雕刻十指指腹、卡其布条纹理与暗银戒面高光反差"
+      ],
+      "constraints": "严格沿用其UE5菲涅尔半透明丝带材质、微粒子与近景受光标准；天星掌中心核心须遵循2026-11-23/24剧本定案——画成发光带环形山质感的月球状星辰，不退回纯星云光球，更严禁画成黑洞"
+    },
+    {
+      "id": "ep003-sc002-026-firecrystal-breath-vfx",
+      "effect": "蜘蛛尸王火晶烈焰吐息（因果链喷射、断裂压缩气环与物理碎屑景深基准）",
+      "path": "Y:\\TX\\AI\\output\\EP003_sc002_026_FireCrystalBreath_Seedream55_v02_4K.png",
+      "brief": "Y:\\TX\\AI\\work\\EP003_sc002_26_27_51_52_20261123\\briefs\\01_Ep003_sc002_026_brief.json",
+      "canvas_project_id": "7cc32ca4-a9a5-4ea0-901b-cedfeb0a06d9",
+      "status": "approved",
+      "approval_evidence": "2026-11-24 用户于对话中明确上传认可该成图的喷射形态、压缩气环、碎屑细节与UE质感",
+      "observations": [
+        "完整物理发射因果链：喉口白金熔岩核→高穿刺射流主轴+螺旋Ribbon→2~3道透视缩放的不均匀断裂双丝压缩气环→火山黑烟反衬",
+        "绑定prop_firecrystal道具材质，在射流外缘飞溅棱角半透明赤红火晶碎屑，并推至右下前景产生180度快门运动模糊与散景",
+        "ACES Filmic动态响应与明度滚降（白金→明橙→赤红→暗红→炭黑烟），地面岩石真实呈现烧灼反照与焦黑对比"
+      ],
+      "constraints": "迁移因果发射链、非均匀断裂压缩气环与前景物理碎屑分层语法；纯火晶红橙色阶仅限火系，不串色给陆隐冷蓝星能/气流体系"
+    }
+  ],
   "approval_policy": "用户明确确认或真实审批记录；文件名/目录不视为批准",
   "candidates": [
     {
@@ -39,6 +113,21 @@
       "status": "candidate",
       "approval_evidence": null,
       "inspection": "核对文件存在；本次未观看内容，不提炼其色彩/动态"
+    },
+    {
+      "id": "ep003-sc006-012-zhoushan-airflow-candidate",
+      "effect": "周山暴风斩气流刀光（气流弧线与切风细丝比对观察样本）",
+      "path": "Y:\\TX\\AI\\output\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\Ep003_sc006_012_Seedream55_VFX_v01_4K.png",
+      "brief": "Y:\\TX\\AI\\work\\EP003_S01_S02_S06_VFX_Seedream55_20261123\\briefs\\19_Ep003_sc006_012_brief.json",
+      "canvas_project_id": "7cc32ca4-a9a5-4ea0-901b-cedfeb0a06d9",
+      "status": "candidate",
+      "approval_evidence": null,
+      "inspection": "已实图查看成片与对应简报；作为同画布气流弧线/切风细丝观察样本入候选库，未经用户单独批准为通用基准",
+      "observations": [
+        "首尾尖削的冷银白至冰青蓝暴风斩主Ribbon，挥砍弧度饱满流畅",
+        "外沿伴随多道平行高速切风细丝（Air-Slice Trails）与斜飞火星、碎砾运动模糊"
+      ],
+      "constraints": "仅作为气流风刃轨迹与切风细丝形态的候选观察样本；不带入周山角色、巨斧与城市背景"
     }
   ]
 }

@@ -11,3 +11,21 @@ output/
 Thumbs.db
 .nl-token
 models_cache.json
+
+# 净图资产库：只入库代码与索引，净图本体/缓存/全库扫描留本地
+asset_vault/library/
+asset_vault/cache/
+asset_vault/source_catalog.json
+asset_vault/vault_contact_sheet.jpg
+asset_vault/batch_spec.json
+
+# 实际成图与参考媒体不入库
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.mov
+*.psd
+*.pur
